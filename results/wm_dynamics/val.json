@@ -1,0 +1,16 @@
+{
+ "val_block_err_k": 1.2926554679870605,
+ "k": 8,
+ "args": {
+  "steps": 40000,
+  "batch": 2048,
+  "lr": 0.001,
+  "k_train": 8,
+  "w_move": 3.0,
+  "hidden": 512,
+  "layers": 4,
+  "n_test": 1000000,
+  "out": "outputs/step11/state_wm_h512_w3",
+  "seed": 0
+ }
+}

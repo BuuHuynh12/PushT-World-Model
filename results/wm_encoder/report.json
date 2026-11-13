@@ -1,0 +1,15 @@
+{
+ "val_n": 9252,
+ "val_pos_mean": 0.4135524238389844,
+ "val_pos_median": 0.32583385740076787,
+ "val_pos_p95": 1.057115849397752,
+ "val_ang_mean": 0.22899926860415223,
+ "val_ang_median": 0.16165043982350066,
+ "val_ang_p95": 0.677038594454449,
+ "demo_iou_mean": 0.2555777294113921,
+ "demo_iou_p10": 0.08736447905749702,
+ "sim_val_iou_pred_mean": 0.2541478759771934,
+ "sim_val_iou_true_mean": 0.25520345527240196,
+ "demo_jitter_static_median": 0.27211153507232666,
+ "demo_jitter_static_p95": 6.595902442932129
+}

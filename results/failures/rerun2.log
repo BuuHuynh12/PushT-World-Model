@@ -1,0 +1,18 @@
+51 seed thua + 0 seed thắng đối chứng
+chạy lại xong 69s | thua tái hiện: 16/51 | thắng tái hiện: 0/0
+
+== 16 màn THUA (tái hiện) — phân loại:
+  sát đích, không chốt          10 (62%)  vd seed [600001, 600077, 600080, 600085, 600199]
+  xa đích cả hai                 4 (25%)  vd seed [600111, 600221, 600311, 600375]
+  sai vị trí                     2 (12%)  vd seed [600238, 600282]
+
+== so sánh THUA vs THẮNG (đối chứng):
+  max coverage                   thua    0.583 | thắng      nan
+  lệch vị trí cuối               thua   92.403 | thắng      nan
+  lệch góc cuối (°)              thua   27.323 | thắng      nan
+  tỉ lệ t/g chấm tròn xa khối    thua    0.365 | thắng      nan
+  encoder sai vị trí TB          thua    8.214 | thắng      nan
+  encoder sai góc TB (°)         thua    7.670 | thắng      nan
+  encoder sai vị trí MAX         thua   14.168 | thắng      nan
+  kẹt 100 bước cuối              thua 62%
+đã lưu outputs/step18/rerun2/failures.json, failure_logs.npz, 0 video

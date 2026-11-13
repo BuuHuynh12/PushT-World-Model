@@ -1,0 +1,1825 @@
+{
+ "args": {
+  "ckpt": "outputs/step3/dp_baseline/ckpt_best.pt",
+  "wm_ckpt": "outputs/step6/wm_dinov2/wm_best.pt",
+  "n_episodes": 300,
+  "seed_start": 3000000,
+  "batch_envs": 50,
+  "n_samples": 4,
+  "n_action_steps": 4,
+  "score_horizon": 8,
+  "explore": 0.2,
+  "branch_cov": 0.6,
+  "branch_p": 0.5,
+  "max_steps": 300,
+  "out": "data/sim_v2.npz"
+ },
+ "n_main_episodes": 300,
+ "n_branch_episodes": 9548,
+ "frames_main": 58927,
+ "frames_branch": 91189,
+ "success_main": 0.7933333333333333,
+ "episodes": [
+  {
+   "seed": 3000000,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.946073618670892
+  },
+  {
+   "seed": 3000001,
+   "len": 169,
+   "success": true,
+   "max_coverage": 0.961961230458488
+  },
+  {
+   "seed": 3000002,
+   "len": 85,
+   "success": true,
+   "max_coverage": 0.9689195926780189
+  },
+  {
+   "seed": 3000003,
+   "len": 149,
+   "success": true,
+   "max_coverage": 0.9565780243586899
+  },
+  {
+   "seed": 3000004,
+   "len": 134,
+   "success": true,
+   "max_coverage": 0.9525906459794699
+  },
+  {
+   "seed": 3000005,
+   "len": 113,
+   "success": true,
+   "max_coverage": 0.9502925442819616
+  },
+  {
+   "seed": 3000006,
+   "len": 140,
+   "success": true,
+   "max_coverage": 0.9647554942947585
+  },
+  {
+   "seed": 3000007,
+   "len": 112,
+   "success": true,
+   "max_coverage": 0.9613255028156131
+  },
+  {
+   "seed": 3000008,
+   "len": 129,
+   "success": true,
+   "max_coverage": 0.9552218309521123
+  },
+  {
+   "seed": 3000009,
+   "len": 130,
+   "success": true,
+   "max_coverage": 0.9599201751771398
+  },
+  {
+   "seed": 3000010,
+   "len": 206,
+   "success": true,
+   "max_coverage": 0.9580368156791298
+  },
+  {
+   "seed": 3000011,
+   "len": 175,
+   "success": true,
+   "max_coverage": 0.9678039679199293
+  },
+  {
+   "seed": 3000012,
+   "len": 256,
+   "success": true,
+   "max_coverage": 0.9530669038050197
+  },
+  {
+   "seed": 3000013,
+   "len": 127,
+   "success": true,
+   "max_coverage": 0.9519940716518576
+  },
+  {
+   "seed": 3000014,
+   "len": 269,
+   "success": true,
+   "max_coverage": 0.9502454817832416
+  },
+  {
+   "seed": 3000015,
+   "len": 285,
+   "success": true,
+   "max_coverage": 0.9713357087352554
+  },
+  {
+   "seed": 3000016,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9117768770676237
+  },
+  {
+   "seed": 3000017,
+   "len": 227,
+   "success": true,
+   "max_coverage": 0.9548553100831922
+  },
+  {
+   "seed": 3000018,
+   "len": 299,
+   "success": true,
+   "max_coverage": 0.9528195634847747
+  },
+  {
+   "seed": 3000019,
+   "len": 186,
+   "success": true,
+   "max_coverage": 0.9605377142725751
+  },
+  {
+   "seed": 3000020,
+   "len": 88,
+   "success": true,
+   "max_coverage": 0.978918859426752
+  },
+  {
+   "seed": 3000021,
+   "len": 171,
+   "success": true,
+   "max_coverage": 0.9560815479734562
+  },
+  {
+   "seed": 3000022,
+   "len": 195,
+   "success": true,
+   "max_coverage": 0.9606057841872808
+  },
+  {
+   "seed": 3000023,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6677939353854847
+  },
+  {
+   "seed": 3000024,
+   "len": 111,
+   "success": true,
+   "max_coverage": 0.9502696201604142
+  },
+  {
+   "seed": 3000025,
+   "len": 116,
+   "success": true,
+   "max_coverage": 0.9524483811071971
+  },
+  {
+   "seed": 3000026,
+   "len": 180,
+   "success": true,
+   "max_coverage": 0.964080399340337
+  },
+  {
+   "seed": 3000027,
+   "len": 209,
+   "success": true,
+   "max_coverage": 0.951053128207125
+  },
+  {
+   "seed": 3000028,
+   "len": 165,
+   "success": true,
+   "max_coverage": 0.9594513014641546
+  },
+  {
+   "seed": 3000029,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9447359089877673
+  },
+  {
+   "seed": 3000030,
+   "len": 108,
+   "success": true,
+   "max_coverage": 0.9633041627849607
+  },
+  {
+   "seed": 3000031,
+   "len": 105,
+   "success": true,
+   "max_coverage": 0.9544431916833319
+  },
+  {
+   "seed": 3000032,
+   "len": 97,
+   "success": true,
+   "max_coverage": 0.9519166212642807
+  },
+  {
+   "seed": 3000033,
+   "len": 157,
+   "success": true,
+   "max_coverage": 0.956090012666126
+  },
+  {
+   "seed": 3000034,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.8248230870577714
+  },
+  {
+   "seed": 3000035,
+   "len": 119,
+   "success": true,
+   "max_coverage": 0.96064541972103
+  },
+  {
+   "seed": 3000036,
+   "len": 168,
+   "success": true,
+   "max_coverage": 0.951852562187748
+  },
+  {
+   "seed": 3000037,
+   "len": 71,
+   "success": true,
+   "max_coverage": 0.9598804102061682
+  },
+  {
+   "seed": 3000038,
+   "len": 221,
+   "success": true,
+   "max_coverage": 0.9548091306471534
+  },
+  {
+   "seed": 3000039,
+   "len": 113,
+   "success": true,
+   "max_coverage": 0.9730218529461379
+  },
+  {
+   "seed": 3000040,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9156500620573484
+  },
+  {
+   "seed": 3000041,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9451610535737663
+  },
+  {
+   "seed": 3000042,
+   "len": 259,
+   "success": true,
+   "max_coverage": 0.9501914738365795
+  },
+  {
+   "seed": 3000043,
+   "len": 266,
+   "success": true,
+   "max_coverage": 0.9700578132687112
+  },
+  {
+   "seed": 3000044,
+   "len": 205,
+   "success": true,
+   "max_coverage": 0.9566464773083447
+  },
+  {
+   "seed": 3000045,
+   "len": 98,
+   "success": true,
+   "max_coverage": 0.9528509809342727
+  },
+  {
+   "seed": 3000046,
+   "len": 95,
+   "success": true,
+   "max_coverage": 0.9518695864202422
+  },
+  {
+   "seed": 3000047,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9144548422054678
+  },
+  {
+   "seed": 3000048,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9370420689570533
+  },
+  {
+   "seed": 3000049,
+   "len": 241,
+   "success": true,
+   "max_coverage": 0.9549258999971413
+  },
+  {
+   "seed": 3000050,
+   "len": 146,
+   "success": true,
+   "max_coverage": 0.963200802947651
+  },
+  {
+   "seed": 3000051,
+   "len": 169,
+   "success": true,
+   "max_coverage": 0.9840253592833894
+  },
+  {
+   "seed": 3000052,
+   "len": 101,
+   "success": true,
+   "max_coverage": 0.9502937992393651
+  },
+  {
+   "seed": 3000053,
+   "len": 249,
+   "success": true,
+   "max_coverage": 0.9575493564894313
+  },
+  {
+   "seed": 3000054,
+   "len": 54,
+   "success": true,
+   "max_coverage": 0.9540024622008664
+  },
+  {
+   "seed": 3000055,
+   "len": 131,
+   "success": true,
+   "max_coverage": 0.9651881238460317
+  },
+  {
+   "seed": 3000056,
+   "len": 163,
+   "success": true,
+   "max_coverage": 0.9590045835460234
+  },
+  {
+   "seed": 3000057,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6837587518371646
+  },
+  {
+   "seed": 3000058,
+   "len": 270,
+   "success": true,
+   "max_coverage": 0.9584479034419361
+  },
+  {
+   "seed": 3000059,
+   "len": 118,
+   "success": true,
+   "max_coverage": 0.9593404982685237
+  },
+  {
+   "seed": 3000060,
+   "len": 150,
+   "success": true,
+   "max_coverage": 0.9651014802106225
+  },
+  {
+   "seed": 3000061,
+   "len": 166,
+   "success": true,
+   "max_coverage": 0.9644930292144712
+  },
+  {
+   "seed": 3000062,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6576768882797301
+  },
+  {
+   "seed": 3000063,
+   "len": 142,
+   "success": true,
+   "max_coverage": 0.9719337982480739
+  },
+  {
+   "seed": 3000064,
+   "len": 123,
+   "success": true,
+   "max_coverage": 0.9769756858508798
+  },
+  {
+   "seed": 3000065,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9428614796981288
+  },
+  {
+   "seed": 3000066,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9064370841302531
+  },
+  {
+   "seed": 3000067,
+   "len": 243,
+   "success": true,
+   "max_coverage": 0.9522360060515583
+  },
+  {
+   "seed": 3000068,
+   "len": 280,
+   "success": true,
+   "max_coverage": 0.9548011677883018
+  },
+  {
+   "seed": 3000069,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.8164217621220325
+  },
+  {
+   "seed": 3000070,
+   "len": 133,
+   "success": true,
+   "max_coverage": 0.9523560038189864
+  },
+  {
+   "seed": 3000071,
+   "len": 119,
+   "success": true,
+   "max_coverage": 0.9525594790640075
+  },
+  {
+   "seed": 3000072,
+   "len": 206,
+   "success": true,
+   "max_coverage": 0.969855738926465
+  },
+  {
+   "seed": 3000073,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9448278893974155
+  },
+  {
+   "seed": 3000074,
+   "len": 147,
+   "success": true,
+   "max_coverage": 0.9591778300251651
+  },
+  {
+   "seed": 3000075,
+   "len": 119,
+   "success": true,
+   "max_coverage": 0.9625734331646917
+  },
+  {
+   "seed": 3000076,
+   "len": 253,
+   "success": true,
+   "max_coverage": 0.9523182839727494
+  },
+  {
+   "seed": 3000077,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.5707269910938534
+  },
+  {
+   "seed": 3000078,
+   "len": 109,
+   "success": true,
+   "max_coverage": 0.9508157907517113
+  },
+  {
+   "seed": 3000079,
+   "len": 107,
+   "success": true,
+   "max_coverage": 0.959967882703949
+  },
+  {
+   "seed": 3000080,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9141137988723572
+  },
+  {
+   "seed": 3000081,
+   "len": 128,
+   "success": true,
+   "max_coverage": 0.9558713074164211
+  },
+  {
+   "seed": 3000082,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9407168439795013
+  },
+  {
+   "seed": 3000083,
+   "len": 132,
+   "success": true,
+   "max_coverage": 0.9629416645058054
+  },
+  {
+   "seed": 3000084,
+   "len": 213,
+   "success": true,
+   "max_coverage": 0.9557530516138287
+  },
+  {
+   "seed": 3000085,
+   "len": 82,
+   "success": true,
+   "max_coverage": 0.9561547306473774
+  },
+  {
+   "seed": 3000086,
+   "len": 150,
+   "success": true,
+   "max_coverage": 0.957339311520923
+  },
+  {
+   "seed": 3000087,
+   "len": 158,
+   "success": true,
+   "max_coverage": 0.9533998183103157
+  },
+  {
+   "seed": 3000088,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9301115269939697
+  },
+  {
+   "seed": 3000089,
+   "len": 176,
+   "success": true,
+   "max_coverage": 0.9580485151151039
+  },
+  {
+   "seed": 3000090,
+   "len": 93,
+   "success": true,
+   "max_coverage": 0.9516408042197545
+  },
+  {
+   "seed": 3000091,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.5327155532882792
+  },
+  {
+   "seed": 3000092,
+   "len": 219,
+   "success": true,
+   "max_coverage": 0.9650685234996345
+  },
+  {
+   "seed": 3000093,
+   "len": 154,
+   "success": true,
+   "max_coverage": 0.9620839251933616
+  },
+  {
+   "seed": 3000094,
+   "len": 151,
+   "success": true,
+   "max_coverage": 0.9705932783515916
+  },
+  {
+   "seed": 3000095,
+   "len": 151,
+   "success": true,
+   "max_coverage": 0.9590599119651366
+  },
+  {
+   "seed": 3000096,
+   "len": 178,
+   "success": true,
+   "max_coverage": 0.9545195241507797
+  },
+  {
+   "seed": 3000097,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9475321270869549
+  },
+  {
+   "seed": 3000098,
+   "len": 202,
+   "success": true,
+   "max_coverage": 0.9511213629349576
+  },
+  {
+   "seed": 3000099,
+   "len": 289,
+   "success": true,
+   "max_coverage": 0.9582720620584342
+  },
+  {
+   "seed": 3000100,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.49252439109096735
+  },
+  {
+   "seed": 3000101,
+   "len": 203,
+   "success": true,
+   "max_coverage": 0.9789500783556095
+  },
+  {
+   "seed": 3000102,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9358346585876711
+  },
+  {
+   "seed": 3000103,
+   "len": 205,
+   "success": true,
+   "max_coverage": 0.9571264239310363
+  },
+  {
+   "seed": 3000104,
+   "len": 96,
+   "success": true,
+   "max_coverage": 0.9506726328594444
+  },
+  {
+   "seed": 3000105,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9335889942601082
+  },
+  {
+   "seed": 3000106,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.5178015293362939
+  },
+  {
+   "seed": 3000107,
+   "len": 132,
+   "success": true,
+   "max_coverage": 0.9602676640634406
+  },
+  {
+   "seed": 3000108,
+   "len": 117,
+   "success": true,
+   "max_coverage": 0.9526735281191162
+  },
+  {
+   "seed": 3000109,
+   "len": 182,
+   "success": true,
+   "max_coverage": 0.9720501942301911
+  },
+  {
+   "seed": 3000110,
+   "len": 180,
+   "success": true,
+   "max_coverage": 0.9523119840878131
+  },
+  {
+   "seed": 3000111,
+   "len": 141,
+   "success": true,
+   "max_coverage": 0.9599336730289313
+  },
+  {
+   "seed": 3000112,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6589640127169926
+  },
+  {
+   "seed": 3000113,
+   "len": 251,
+   "success": true,
+   "max_coverage": 0.9526483331046947
+  },
+  {
+   "seed": 3000114,
+   "len": 272,
+   "success": true,
+   "max_coverage": 0.9686096934087574
+  },
+  {
+   "seed": 3000115,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6367615336414457
+  },
+  {
+   "seed": 3000116,
+   "len": 231,
+   "success": true,
+   "max_coverage": 0.9698075315930176
+  },
+  {
+   "seed": 3000117,
+   "len": 148,
+   "success": true,
+   "max_coverage": 0.9613301005705605
+  },
+  {
+   "seed": 3000118,
+   "len": 179,
+   "success": true,
+   "max_coverage": 0.9500670884823731
+  },
+  {
+   "seed": 3000119,
+   "len": 189,
+   "success": true,
+   "max_coverage": 0.9639690468910372
+  },
+  {
+   "seed": 3000120,
+   "len": 121,
+   "success": true,
+   "max_coverage": 0.9738430035783814
+  },
+  {
+   "seed": 3000121,
+   "len": 233,
+   "success": true,
+   "max_coverage": 0.9568577928411968
+  },
+  {
+   "seed": 3000122,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9106560197209618
+  },
+  {
+   "seed": 3000123,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.0
+  },
+  {
+   "seed": 3000124,
+   "len": 231,
+   "success": true,
+   "max_coverage": 0.9645487337798762
+  },
+  {
+   "seed": 3000125,
+   "len": 129,
+   "success": true,
+   "max_coverage": 0.9662812666530268
+  },
+  {
+   "seed": 3000126,
+   "len": 136,
+   "success": true,
+   "max_coverage": 0.9518400057757312
+  },
+  {
+   "seed": 3000127,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9217686222805116
+  },
+  {
+   "seed": 3000128,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6878867995246977
+  },
+  {
+   "seed": 3000129,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9446913515571068
+  },
+  {
+   "seed": 3000130,
+   "len": 107,
+   "success": true,
+   "max_coverage": 0.981822127762447
+  },
+  {
+   "seed": 3000131,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9069098295479165
+  },
+  {
+   "seed": 3000132,
+   "len": 77,
+   "success": true,
+   "max_coverage": 0.9603829440389688
+  },
+  {
+   "seed": 3000133,
+   "len": 201,
+   "success": true,
+   "max_coverage": 0.9559512764511144
+  },
+  {
+   "seed": 3000134,
+   "len": 89,
+   "success": true,
+   "max_coverage": 0.9596546251381087
+  },
+  {
+   "seed": 3000135,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9384386825336108
+  },
+  {
+   "seed": 3000136,
+   "len": 72,
+   "success": true,
+   "max_coverage": 0.9500202895445725
+  },
+  {
+   "seed": 3000137,
+   "len": 97,
+   "success": true,
+   "max_coverage": 0.9564872510678867
+  },
+  {
+   "seed": 3000138,
+   "len": 202,
+   "success": true,
+   "max_coverage": 0.9645477565102184
+  },
+  {
+   "seed": 3000139,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9440209504486068
+  },
+  {
+   "seed": 3000140,
+   "len": 196,
+   "success": true,
+   "max_coverage": 0.9503235813830151
+  },
+  {
+   "seed": 3000141,
+   "len": 245,
+   "success": true,
+   "max_coverage": 0.9681255863057645
+  },
+  {
+   "seed": 3000142,
+   "len": 177,
+   "success": true,
+   "max_coverage": 0.9568873029425926
+  },
+  {
+   "seed": 3000143,
+   "len": 97,
+   "success": true,
+   "max_coverage": 0.9525049813318551
+  },
+  {
+   "seed": 3000144,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9341595453165499
+  },
+  {
+   "seed": 3000145,
+   "len": 176,
+   "success": true,
+   "max_coverage": 0.9590827454142496
+  },
+  {
+   "seed": 3000146,
+   "len": 166,
+   "success": true,
+   "max_coverage": 0.9532220976268301
+  },
+  {
+   "seed": 3000147,
+   "len": 124,
+   "success": true,
+   "max_coverage": 0.9502401793926419
+  },
+  {
+   "seed": 3000148,
+   "len": 187,
+   "success": true,
+   "max_coverage": 0.9579889456975016
+  },
+  {
+   "seed": 3000149,
+   "len": 153,
+   "success": true,
+   "max_coverage": 0.9665001761135135
+  },
+  {
+   "seed": 3000150,
+   "len": 163,
+   "success": true,
+   "max_coverage": 0.9543843973833738
+  },
+  {
+   "seed": 3000151,
+   "len": 159,
+   "success": true,
+   "max_coverage": 0.9695550489216593
+  },
+  {
+   "seed": 3000152,
+   "len": 102,
+   "success": true,
+   "max_coverage": 0.960423351011236
+  },
+  {
+   "seed": 3000153,
+   "len": 209,
+   "success": true,
+   "max_coverage": 0.9539255467268498
+  },
+  {
+   "seed": 3000154,
+   "len": 281,
+   "success": true,
+   "max_coverage": 0.9745170561031766
+  },
+  {
+   "seed": 3000155,
+   "len": 233,
+   "success": true,
+   "max_coverage": 0.9735505946359392
+  },
+  {
+   "seed": 3000156,
+   "len": 261,
+   "success": true,
+   "max_coverage": 0.9546331198293102
+  },
+  {
+   "seed": 3000157,
+   "len": 194,
+   "success": true,
+   "max_coverage": 0.9812498233386863
+  },
+  {
+   "seed": 3000158,
+   "len": 74,
+   "success": true,
+   "max_coverage": 0.9649455088960347
+  },
+  {
+   "seed": 3000159,
+   "len": 132,
+   "success": true,
+   "max_coverage": 0.9524684386303571
+  },
+  {
+   "seed": 3000160,
+   "len": 157,
+   "success": true,
+   "max_coverage": 0.9587338454178781
+  },
+  {
+   "seed": 3000161,
+   "len": 199,
+   "success": true,
+   "max_coverage": 0.9510312241094159
+  },
+  {
+   "seed": 3000162,
+   "len": 143,
+   "success": true,
+   "max_coverage": 0.9572437213388255
+  },
+  {
+   "seed": 3000163,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9381196391181718
+  },
+  {
+   "seed": 3000164,
+   "len": 258,
+   "success": true,
+   "max_coverage": 0.9515414743682302
+  },
+  {
+   "seed": 3000165,
+   "len": 138,
+   "success": true,
+   "max_coverage": 0.963872057674462
+  },
+  {
+   "seed": 3000166,
+   "len": 261,
+   "success": true,
+   "max_coverage": 0.9795921432661034
+  },
+  {
+   "seed": 3000167,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.288650761658016
+  },
+  {
+   "seed": 3000168,
+   "len": 172,
+   "success": true,
+   "max_coverage": 0.9804675870587585
+  },
+  {
+   "seed": 3000169,
+   "len": 132,
+   "success": true,
+   "max_coverage": 0.9695137795991449
+  },
+  {
+   "seed": 3000170,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9481843680502596
+  },
+  {
+   "seed": 3000171,
+   "len": 147,
+   "success": true,
+   "max_coverage": 0.9584328920223415
+  },
+  {
+   "seed": 3000172,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9273859376919231
+  },
+  {
+   "seed": 3000173,
+   "len": 176,
+   "success": true,
+   "max_coverage": 0.9823627509376889
+  },
+  {
+   "seed": 3000174,
+   "len": 286,
+   "success": true,
+   "max_coverage": 0.955578459989651
+  },
+  {
+   "seed": 3000175,
+   "len": 248,
+   "success": true,
+   "max_coverage": 0.9516136062594646
+  },
+  {
+   "seed": 3000176,
+   "len": 206,
+   "success": true,
+   "max_coverage": 0.9730204360333684
+  },
+  {
+   "seed": 3000177,
+   "len": 225,
+   "success": true,
+   "max_coverage": 0.9503702807420757
+  },
+  {
+   "seed": 3000178,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.942143834399371
+  },
+  {
+   "seed": 3000179,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9469382439608802
+  },
+  {
+   "seed": 3000180,
+   "len": 241,
+   "success": true,
+   "max_coverage": 0.9526192923431519
+  },
+  {
+   "seed": 3000181,
+   "len": 226,
+   "success": true,
+   "max_coverage": 0.9763925278076768
+  },
+  {
+   "seed": 3000182,
+   "len": 129,
+   "success": true,
+   "max_coverage": 0.9675068246796023
+  },
+  {
+   "seed": 3000183,
+   "len": 129,
+   "success": true,
+   "max_coverage": 0.9528707893199303
+  },
+  {
+   "seed": 3000184,
+   "len": 156,
+   "success": true,
+   "max_coverage": 0.9526665695083175
+  },
+  {
+   "seed": 3000185,
+   "len": 147,
+   "success": true,
+   "max_coverage": 0.9714125042678016
+  },
+  {
+   "seed": 3000186,
+   "len": 131,
+   "success": true,
+   "max_coverage": 0.9771292516470236
+  },
+  {
+   "seed": 3000187,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.938132025159312
+  },
+  {
+   "seed": 3000188,
+   "len": 135,
+   "success": true,
+   "max_coverage": 0.9566945615098327
+  },
+  {
+   "seed": 3000189,
+   "len": 117,
+   "success": true,
+   "max_coverage": 0.9515477468008186
+  },
+  {
+   "seed": 3000190,
+   "len": 202,
+   "success": true,
+   "max_coverage": 0.9524265705307022
+  },
+  {
+   "seed": 3000191,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.8932642814112636
+  },
+  {
+   "seed": 3000192,
+   "len": 133,
+   "success": true,
+   "max_coverage": 0.9516914545523205
+  },
+  {
+   "seed": 3000193,
+   "len": 178,
+   "success": true,
+   "max_coverage": 0.9596562049646037
+  },
+  {
+   "seed": 3000194,
+   "len": 144,
+   "success": true,
+   "max_coverage": 0.9500438695484678
+  },
+  {
+   "seed": 3000195,
+   "len": 106,
+   "success": true,
+   "max_coverage": 0.9559436265687269
+  },
+  {
+   "seed": 3000196,
+   "len": 99,
+   "success": true,
+   "max_coverage": 0.9515143892097372
+  },
+  {
+   "seed": 3000197,
+   "len": 107,
+   "success": true,
+   "max_coverage": 0.9524047883030721
+  },
+  {
+   "seed": 3000198,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.29511075554086647
+  },
+  {
+   "seed": 3000199,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9493085197880171
+  },
+  {
+   "seed": 3000200,
+   "len": 152,
+   "success": true,
+   "max_coverage": 0.9603862743828359
+  },
+  {
+   "seed": 3000201,
+   "len": 112,
+   "success": true,
+   "max_coverage": 0.9571173330690272
+  },
+  {
+   "seed": 3000202,
+   "len": 271,
+   "success": true,
+   "max_coverage": 0.9657222943891196
+  },
+  {
+   "seed": 3000203,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9144645470922945
+  },
+  {
+   "seed": 3000204,
+   "len": 151,
+   "success": true,
+   "max_coverage": 0.9523682249077456
+  },
+  {
+   "seed": 3000205,
+   "len": 241,
+   "success": true,
+   "max_coverage": 0.9500665487929125
+  },
+  {
+   "seed": 3000206,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9224630161763757
+  },
+  {
+   "seed": 3000207,
+   "len": 136,
+   "success": true,
+   "max_coverage": 0.9586201239056051
+  },
+  {
+   "seed": 3000208,
+   "len": 113,
+   "success": true,
+   "max_coverage": 0.9510896926401281
+  },
+  {
+   "seed": 3000209,
+   "len": 237,
+   "success": true,
+   "max_coverage": 0.9506310652381997
+  },
+  {
+   "seed": 3000210,
+   "len": 134,
+   "success": true,
+   "max_coverage": 0.961527572026877
+  },
+  {
+   "seed": 3000211,
+   "len": 157,
+   "success": true,
+   "max_coverage": 0.9502633461261963
+  },
+  {
+   "seed": 3000212,
+   "len": 275,
+   "success": true,
+   "max_coverage": 0.9606559233909436
+  },
+  {
+   "seed": 3000213,
+   "len": 202,
+   "success": true,
+   "max_coverage": 0.9503209457444498
+  },
+  {
+   "seed": 3000214,
+   "len": 137,
+   "success": true,
+   "max_coverage": 0.9507335957935849
+  },
+  {
+   "seed": 3000215,
+   "len": 72,
+   "success": true,
+   "max_coverage": 0.9634641500610837
+  },
+  {
+   "seed": 3000216,
+   "len": 216,
+   "success": true,
+   "max_coverage": 0.9556794618169878
+  },
+  {
+   "seed": 3000217,
+   "len": 250,
+   "success": true,
+   "max_coverage": 0.9634109277960818
+  },
+  {
+   "seed": 3000218,
+   "len": 262,
+   "success": true,
+   "max_coverage": 0.950764000322934
+  },
+  {
+   "seed": 3000219,
+   "len": 115,
+   "success": true,
+   "max_coverage": 0.9558191712801319
+  },
+  {
+   "seed": 3000220,
+   "len": 139,
+   "success": true,
+   "max_coverage": 0.9534131893948379
+  },
+  {
+   "seed": 3000221,
+   "len": 139,
+   "success": true,
+   "max_coverage": 0.9676807132813713
+  },
+  {
+   "seed": 3000222,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6499900779939609
+  },
+  {
+   "seed": 3000223,
+   "len": 260,
+   "success": true,
+   "max_coverage": 0.9549885821316405
+  },
+  {
+   "seed": 3000224,
+   "len": 113,
+   "success": true,
+   "max_coverage": 0.9500338274033726
+  },
+  {
+   "seed": 3000225,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9403686624757264
+  },
+  {
+   "seed": 3000226,
+   "len": 68,
+   "success": true,
+   "max_coverage": 0.9691771831056017
+  },
+  {
+   "seed": 3000227,
+   "len": 181,
+   "success": true,
+   "max_coverage": 0.9587334581190375
+  },
+  {
+   "seed": 3000228,
+   "len": 114,
+   "success": true,
+   "max_coverage": 0.9503735731437245
+  },
+  {
+   "seed": 3000229,
+   "len": 73,
+   "success": true,
+   "max_coverage": 0.9713427419595778
+  },
+  {
+   "seed": 3000230,
+   "len": 108,
+   "success": true,
+   "max_coverage": 0.9550154354277218
+  },
+  {
+   "seed": 3000231,
+   "len": 284,
+   "success": true,
+   "max_coverage": 0.9532381769115624
+  },
+  {
+   "seed": 3000232,
+   "len": 82,
+   "success": true,
+   "max_coverage": 0.950733974871359
+  },
+  {
+   "seed": 3000233,
+   "len": 63,
+   "success": true,
+   "max_coverage": 0.9569721400283785
+  },
+  {
+   "seed": 3000234,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9445595315873564
+  },
+  {
+   "seed": 3000235,
+   "len": 162,
+   "success": true,
+   "max_coverage": 0.9602110396913917
+  },
+  {
+   "seed": 3000236,
+   "len": 175,
+   "success": true,
+   "max_coverage": 0.9728531348311111
+  },
+  {
+   "seed": 3000237,
+   "len": 113,
+   "success": true,
+   "max_coverage": 0.9563734732457237
+  },
+  {
+   "seed": 3000238,
+   "len": 280,
+   "success": true,
+   "max_coverage": 0.9536033982494264
+  },
+  {
+   "seed": 3000239,
+   "len": 196,
+   "success": true,
+   "max_coverage": 0.9621498043975966
+  },
+  {
+   "seed": 3000240,
+   "len": 285,
+   "success": true,
+   "max_coverage": 0.9534125441984489
+  },
+  {
+   "seed": 3000241,
+   "len": 102,
+   "success": true,
+   "max_coverage": 0.9598897124454677
+  },
+  {
+   "seed": 3000242,
+   "len": 166,
+   "success": true,
+   "max_coverage": 0.9587902531781717
+  },
+  {
+   "seed": 3000243,
+   "len": 264,
+   "success": true,
+   "max_coverage": 0.9914573941553976
+  },
+  {
+   "seed": 3000244,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.5554708148288616
+  },
+  {
+   "seed": 3000245,
+   "len": 118,
+   "success": true,
+   "max_coverage": 0.9602392973611502
+  },
+  {
+   "seed": 3000246,
+   "len": 208,
+   "success": true,
+   "max_coverage": 0.9525827390339376
+  },
+  {
+   "seed": 3000247,
+   "len": 203,
+   "success": true,
+   "max_coverage": 0.9501352919674608
+  },
+  {
+   "seed": 3000248,
+   "len": 104,
+   "success": true,
+   "max_coverage": 0.9533423066692487
+  },
+  {
+   "seed": 3000249,
+   "len": 127,
+   "success": true,
+   "max_coverage": 0.9522546368131802
+  },
+  {
+   "seed": 3000250,
+   "len": 237,
+   "success": true,
+   "max_coverage": 0.9600329614759667
+  },
+  {
+   "seed": 3000251,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9184318469766194
+  },
+  {
+   "seed": 3000252,
+   "len": 96,
+   "success": true,
+   "max_coverage": 0.9706257005908442
+  },
+  {
+   "seed": 3000253,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9081835450641261
+  },
+  {
+   "seed": 3000254,
+   "len": 205,
+   "success": true,
+   "max_coverage": 0.9699584396329995
+  },
+  {
+   "seed": 3000255,
+   "len": 143,
+   "success": true,
+   "max_coverage": 0.9609634909574387
+  },
+  {
+   "seed": 3000256,
+   "len": 225,
+   "success": true,
+   "max_coverage": 0.9558466209304077
+  },
+  {
+   "seed": 3000257,
+   "len": 146,
+   "success": true,
+   "max_coverage": 0.9672087926344024
+  },
+  {
+   "seed": 3000258,
+   "len": 140,
+   "success": true,
+   "max_coverage": 0.9580805667555331
+  },
+  {
+   "seed": 3000259,
+   "len": 178,
+   "success": true,
+   "max_coverage": 0.9654717528824973
+  },
+  {
+   "seed": 3000260,
+   "len": 135,
+   "success": true,
+   "max_coverage": 0.9525948966054495
+  },
+  {
+   "seed": 3000261,
+   "len": 205,
+   "success": true,
+   "max_coverage": 0.9732618674842782
+  },
+  {
+   "seed": 3000262,
+   "len": 52,
+   "success": true,
+   "max_coverage": 0.9520789207647578
+  },
+  {
+   "seed": 3000263,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9497890779709184
+  },
+  {
+   "seed": 3000264,
+   "len": 106,
+   "success": true,
+   "max_coverage": 0.9619531223355225
+  },
+  {
+   "seed": 3000265,
+   "len": 102,
+   "success": true,
+   "max_coverage": 0.9534492606018353
+  },
+  {
+   "seed": 3000266,
+   "len": 145,
+   "success": true,
+   "max_coverage": 0.9502581244994948
+  },
+  {
+   "seed": 3000267,
+   "len": 203,
+   "success": true,
+   "max_coverage": 0.9611275414177487
+  },
+  {
+   "seed": 3000268,
+   "len": 166,
+   "success": true,
+   "max_coverage": 0.9528501517664485
+  },
+  {
+   "seed": 3000269,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.6893999129991515
+  },
+  {
+   "seed": 3000270,
+   "len": 85,
+   "success": true,
+   "max_coverage": 0.977048942415486
+  },
+  {
+   "seed": 3000271,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9066930044973847
+  },
+  {
+   "seed": 3000272,
+   "len": 98,
+   "success": true,
+   "max_coverage": 0.9550461439513355
+  },
+  {
+   "seed": 3000273,
+   "len": 290,
+   "success": true,
+   "max_coverage": 0.9561767418223907
+  },
+  {
+   "seed": 3000274,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9193006355473475
+  },
+  {
+   "seed": 3000275,
+   "len": 113,
+   "success": true,
+   "max_coverage": 0.9596394965423024
+  },
+  {
+   "seed": 3000276,
+   "len": 282,
+   "success": true,
+   "max_coverage": 0.959058349703122
+  },
+  {
+   "seed": 3000277,
+   "len": 263,
+   "success": true,
+   "max_coverage": 0.95254887090156
+  },
+  {
+   "seed": 3000278,
+   "len": 157,
+   "success": true,
+   "max_coverage": 0.9537196119237816
+  },
+  {
+   "seed": 3000279,
+   "len": 193,
+   "success": true,
+   "max_coverage": 0.9779866003999406
+  },
+  {
+   "seed": 3000280,
+   "len": 226,
+   "success": true,
+   "max_coverage": 0.9529941894227202
+  },
+  {
+   "seed": 3000281,
+   "len": 288,
+   "success": true,
+   "max_coverage": 0.977048123942234
+  },
+  {
+   "seed": 3000282,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9464943472545768
+  },
+  {
+   "seed": 3000283,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.4301072177741666
+  },
+  {
+   "seed": 3000284,
+   "len": 112,
+   "success": true,
+   "max_coverage": 0.9569244961368958
+  },
+  {
+   "seed": 3000285,
+   "len": 240,
+   "success": true,
+   "max_coverage": 0.9500908839902462
+  },
+  {
+   "seed": 3000286,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9400549658397559
+  },
+  {
+   "seed": 3000287,
+   "len": 261,
+   "success": true,
+   "max_coverage": 0.9518094425022434
+  },
+  {
+   "seed": 3000288,
+   "len": 223,
+   "success": true,
+   "max_coverage": 0.9519972560068657
+  },
+  {
+   "seed": 3000289,
+   "len": 239,
+   "success": true,
+   "max_coverage": 0.9645774000931775
+  },
+  {
+   "seed": 3000290,
+   "len": 235,
+   "success": true,
+   "max_coverage": 0.9527446135622623
+  },
+  {
+   "seed": 3000291,
+   "len": 153,
+   "success": true,
+   "max_coverage": 0.9706852540740694
+  },
+  {
+   "seed": 3000292,
+   "len": 173,
+   "success": true,
+   "max_coverage": 0.9654925985935422
+  },
+  {
+   "seed": 3000293,
+   "len": 218,
+   "success": true,
+   "max_coverage": 0.9561476478928072
+  },
+  {
+   "seed": 3000294,
+   "len": 300,
+   "success": false,
+   "max_coverage": 0.9408793893709418
+  },
+  {
+   "seed": 3000295,
+   "len": 287,
+   "success": true,
+   "max_coverage": 0.9658123039908681
+  },
+  {
+   "seed": 3000296,
+   "len": 169,
+   "success": true,
+   "max_coverage": 0.9534616390585297
+  },
+  {
+   "seed": 3000297,
+   "len": 254,
+   "success": true,
+   "max_coverage": 0.9678458919696368
+  },
+  {
+   "seed": 3000298,
+   "len": 122,
+   "success": true,
+   "max_coverage": 0.9728456642147296
+  },
+  {
+   "seed": 3000299,
+   "len": 201,
+   "success": true,
+   "max_coverage": 0.9720580520908146
+  }
+ ],
+ "time_s": 364.52537512779236
+}

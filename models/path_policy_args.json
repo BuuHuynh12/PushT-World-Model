@@ -1,0 +1,21 @@
+{
+ "feature": "state",
+ "output": "path",
+ "inverse": "outputs/step14/inverse/inverse.pt",
+ "extra": [
+  "sim_v2"
+ ],
+ "steps": 20000,
+ "batch": 1024,
+ "lr": 0.0002,
+ "warmup": 500,
+ "eval_every": 4000,
+ "eval_seeds": 50,
+ "state_noise_pos": 1.0,
+ "state_noise_deg": 0.5,
+ "state_wm": "outputs/step11/state_wm_h512_w3/state_wm.pt",
+ "pose_net": "outputs/step12/pose_net/pose_net.pt",
+ "out": "outputs/step14/path_state_extra",
+ "seed": 42,
+ "bf16": 1
+}

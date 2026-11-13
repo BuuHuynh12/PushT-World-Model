@@ -1,0 +1,16 @@
+# môi trường / cache
+.venv/
+__pycache__/
+*.pyc
+# thí nghiệm cũ + kết quả chạy lại (không đưa lên repo)
+archive/
+outputs/
+# gói chép lên máy thuê
+*.tar
+*.tgz
+*.zip
+# dữ liệu lớn: chỉ giữ nhãn khối T của demo + mô tả dữ liệu sim
+data/*
+!data/demo_state.npz
+!data/sim_v1.json
+!data/sim_v2.json

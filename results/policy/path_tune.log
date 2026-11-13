@@ -1,0 +1,17 @@
+[path_state_extra_A8_K10_N16_feas0.5] 500 seed từ 700000: success 0.888 ±0.028 | thời gian tới đích (trung vị) 142.0 | max_cov TB 0.932 | 313s
+[path_state_extra_A8_K10_N16_feas1] 500 seed từ 700000: success 0.880 ±0.028 | thời gian tới đích (trung vị) 139.0 | max_cov TB 0.932 | 313s
+[path_state_extra_A8_K10_N16_feas2] 500 seed từ 700000: success 0.876 ±0.029 | thời gian tới đích (trung vị) 138.0 | max_cov TB 0.931 | 318s
+[path_state_extra_A8_K10_N16_sel-state_wm_fde_feas2] 500 seed từ 700000: success 0.860 ±0.030 | thời gian tới đích (trung vị) 132.5 | max_cov TB 0.934 | 328s
+[path_state_extra_A8_K10_N16_sel-state_wm_fde_feas0.5] 500 seed từ 700000: success 0.882 ±0.028 | thời gian tới đích (trung vị) 137.0 | max_cov TB 0.937 | 346s
+[path_state_extra_A8_K10_N16_sel-state_wm_fde_feas1] 500 seed từ 700000: success 0.870 ±0.029 | thời gian tới đích (trung vị) 137.0 | max_cov TB 0.938 | 348s
+[path_state_extra_A8_K10_N32_feas0.5] 500 seed từ 700000: success 0.862 ±0.030 | thời gian tới đích (trung vị) 131.0 | max_cov TB 0.932 | 539s
+[path_state_extra_A8_K10_N32_feas1] 500 seed từ 700000: success 0.874 ±0.029 | thời gian tới đích (trung vị) 136.0 | max_cov TB 0.933 | 569s
+[path_state_extra_A8_K10_N32_feas2] 500 seed từ 700000: success 0.860 ±0.030 | thời gian tới đích (trung vị) 134.0 | max_cov TB 0.927 | 574s
+[path_state_extra_A8_K10_N32_sel-state_wm_fde_feas0.5] 500 seed từ 700000: success 0.868 ±0.030 | thời gian tới đích (trung vị) 134.5 | max_cov TB 0.934 | 534s
+[path_state_extra_A8_K10_N32_sel-state_wm_fde_feas2] 500 seed từ 700000: success 0.866 ±0.030 | thời gian tới đích (trung vị) 134.0 | max_cov TB 0.926 | 545s
+[path_state_extra_A8_K10_N32_sel-state_wm_fde_feas1] 500 seed từ 700000: success 0.856 ±0.031 | thời gian tới đích (trung vị) 132.0 | max_cov TB 0.932 | 552s
+[path_state_extra_A8_K10] 500 seed từ 700000: success 0.810 ±0.034 | thời gian tới đích (trung vị) 170.0 | max_cov TB 0.922 | 194s
+[path_state_extra_A8_K10_N16_sel-state_wm_fde] 500 seed từ 700000: success 0.868 ±0.030 | thời gian tới đích (trung vị) 134.0 | max_cov TB 0.936 | 288s
+[path_state_extra_A8_K10_N16] 500 seed từ 700000: success 0.878 ±0.029 | thời gian tới đích (trung vị) 140.0 | max_cov TB 0.932 | 295s
+Tue Nov 10 17:44:10 UTC 2026
+XONG

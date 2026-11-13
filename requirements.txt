@@ -1,0 +1,12 @@
+torch
+numpy
+pandas
+pyarrow
+av            # PyAV, có sẵn decoder AV1 (libdav1d) cho video của lerobot/pusht
+pillow
+huggingface_hub
+gymnasium
+gym-pusht     # kéo theo pymunk, pygame, shapely, opencv
+tensorboard   # log train (bước 3+)
+pyyaml        # config
+transformers  # DINOv2 / V-JEPA 2 (bước 5)
