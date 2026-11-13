@@ -30,8 +30,6 @@ trong các đề xuất của một **Diffusion Policy**.
   <em>Kiểu thua phổ biến nhất (52%): khối T chỉ lệch vài đơn vị, coverage ~0.9 &lt; 0.95, hết 300 bước.</em>
 </p>
 
-Chi tiết cách hoạt động, cách train, toàn bộ số liệu, phân tích màn thua và các thí nghiệm khác: **[HUONG_DAN.md](HUONG_DAN.md)**.
-
 ## Thành phần
 
 | | Kiến trúc | Vai trò | Checkpoint |
@@ -52,7 +50,8 @@ python -m venv .venv
 .venv/Scripts/python app_pusht.py    # app: kéo khối T, bấm SPACE để mô hình đẩy
 ```
 Không có GPU vẫn chạy app được (cài torch bản CPU). Đánh giá: `python scripts/eval_state_dp.py`.
-Train lại: `bash scripts/run_main.sh` (cần dữ liệu `data/` — xem [HUONG_DAN.md](HUONG_DAN.md#22-dữ-liệu-thư-mục-data)).
+Train lại: `bash scripts/run_main.sh` (cần thêm dữ liệu `data/sim_v1.npz`, `data/sim_v2.npz` — không có trong repo vì dung lượng lớn;
+`data/pusht_raw.npz` tự tải từ Hugging Face `lerobot/pusht` lần đầu chạy).
 
 ## Cấu trúc
 
@@ -64,7 +63,6 @@ pusht_wm/           code mô hình (encoder, world model, diffusion, mô hình n
 scripts/            train / đánh giá / phân tích
 results/            kết quả gốc (json, log, video màn thua)
 data/demo_state.npz nhãn khối T của 206 demo (dữ liệu lớn khác không nằm trong repo)
-HUONG_DAN.md        tài liệu chi tiết cho nhóm
 ```
 
 Dựa trên: Chi et al., *Diffusion Policy: Visuomotor Policy Learning via Action Diffusion* (2023); dữ liệu `lerobot/pusht`;

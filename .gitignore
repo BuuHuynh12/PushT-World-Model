@@ -14,3 +14,5 @@ data/*
 !data/demo_state.npz
 !data/sim_v1.json
 !data/sim_v2.json
+# tài liệu nội bộ cho nhóm (không đưa lên repo)
+HUONG_DAN.md
