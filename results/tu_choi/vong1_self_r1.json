@@ -1,0 +1,17 @@
+{
+ "ckpt": "outputs/loop/r0/path_b/ckpt_best.pt",
+ "wm": null,
+ "n_samples": 16,
+ "max_steps": 300,
+ "n_action_steps": 8,
+ "ddim_steps": 10,
+ "seeds": [
+  910000,
+  910999
+ ],
+ "success_rate": 0.809,
+ "ci95": 0.02436391163996454,
+ "steps_to_success_median": 161.0,
+ "mean_max_coverage": 0.8752016315034075,
+ "time_s": 1121.9975950717926
+}

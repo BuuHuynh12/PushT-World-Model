@@ -1,0 +1,70 @@
+{
+ "k1": {
+  "n": 53827,
+  "n_moving": 17497,
+  "pos_err_mean": 2.7645547362843153,
+  "pos_err_median": 2.1375610707683874,
+  "ang_err_median": 0.6331704480925753,
+  "baseline_pos_err_mean": 1.3610646607845442,
+  "baseline_ang_err_median": 0.0,
+  "moving_pos_err_mean": 3.0761279812468323,
+  "moving_baseline_pos_err_mean": 3.912832673284186,
+  "moving_ang_err_median": 0.8868809537172334,
+  "moving_baseline_ang_err_median": 1.9191338540641347,
+  "moving_pos_gain_pct": 21.3836052267238,
+  "moving_dir_cos_median": 0.9390034483711412,
+  "moving_mag_ratio_median": 1.0126622516522534
+ },
+ "k4": {
+  "n": 53827,
+  "n_moving": 24402,
+  "pos_err_mean": 2.8745527078863926,
+  "pos_err_median": 2.0648380952760634,
+  "ang_err_median": 0.7026444744405216,
+  "baseline_pos_err_mean": 5.416633313522773,
+  "baseline_ang_err_median": 0.05891469700912089,
+  "moving_pos_err_mean": 3.2647502190110327,
+  "moving_baseline_pos_err_mean": 11.840486252565144,
+  "moving_ang_err_median": 0.9973730773882978,
+  "moving_baseline_ang_err_median": 4.574114680604165,
+  "moving_pos_gain_pct": 72.42722849913574,
+  "moving_dir_cos_median": 0.9925196473924631,
+  "moving_mag_ratio_median": 1.016909880903281
+ },
+ "k8": {
+  "n": 53827,
+  "n_moving": 30084,
+  "pos_err_mean": 3.091443320649868,
+  "pos_err_median": 1.9790015330051307,
+  "ang_err_median": 0.7545028386618327,
+  "baseline_pos_err_mean": 10.768603993532754,
+  "baseline_ang_err_median": 0.8280093703546411,
+  "moving_pos_err_mean": 3.5693165122955937,
+  "moving_baseline_pos_err_mean": 19.18341393127843,
+  "moving_ang_err_median": 0.9834072042336712,
+  "moving_baseline_ang_err_median": 6.253486873539265,
+  "moving_pos_gain_pct": 81.3937366670911,
+  "moving_dir_cos_median": 0.9965744210265911,
+  "moving_mag_ratio_median": 1.008485173859559
+ },
+ "k16": {
+  "n": 53827,
+  "n_moving": 40044,
+  "pos_err_mean": 3.824629809669598,
+  "pos_err_median": 1.8836578001764945,
+  "ang_err_median": 0.8126110779354917,
+  "baseline_pos_err_mean": 21.248845580399344,
+  "baseline_ang_err_median": 3.4058511486542384,
+  "moving_pos_err_mean": 4.309912139498088,
+  "moving_baseline_pos_err_mean": 28.502532719915354,
+  "moving_ang_err_median": 0.9465450317049084,
+  "moving_baseline_ang_err_median": 7.481125421083979,
+  "moving_pos_gain_pct": 84.87884504212268,
+  "moving_dir_cos_median": 0.9979081876213265,
+  "moving_mag_ratio_median": 1.002108950135776
+ },
+ "pose_head_floor": {
+  "pos_err_mean": 2.9015231834763955,
+  "ang_err_median": 0.6100772631913954
+ }
+}

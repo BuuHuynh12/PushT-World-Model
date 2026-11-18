@@ -1,4 +1,4 @@
-"""Bước 1: load dataset lerobot/pusht (parquet + video) thành mảng numpy và Dataset PyTorch.
+"""load dataset lerobot/pusht (parquet + video) thành mảng numpy và Dataset PyTorch.
 
 Không phụ thuộc thư viện `lerobot` (tránh lệch phiên bản); chỉ cần
 huggingface_hub, pandas, pyarrow, av (PyAV, có decoder AV1), numpy, torch.

@@ -1,0 +1,14 @@
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 11667.70it/s]
+  100/500 màn | success tới giờ 0.920
+  200/500 màn | success tới giờ 0.910
+  300/500 màn | success tới giờ 0.903
+  400/500 màn | success tới giờ 0.912
+  500/500 màn | success tới giờ 0.920
+[latent_path_N16] 500 seed từ 600000: success 0.920 ±0.024 | thời gian tới đích (trung vị) 141.0 | max_cov TB 0.935 | 499s
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 12143.51it/s]
+  100/500 màn | success tới giờ 0.800
+  200/500 màn | success tới giờ 0.805
+  300/500 màn | success tới giờ 0.833
+  400/500 màn | success tới giờ 0.845
+  500/500 màn | success tới giờ 0.848
+[latent_path_N1] 500 seed từ 600000: success 0.848 ±0.031 | thời gian tới đích (trung vị) 173.0 | max_cov TB 0.912 | 244s

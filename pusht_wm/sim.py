@@ -1,4 +1,4 @@
-"""Bước 2: môi trường mô phỏng gym-pusht và công cụ kiểm tra khớp với dataset.
+"""môi trường mô phỏng gym-pusht và công cụ kiểm tra khớp với dataset.
 
 Dataset lerobot/pusht chỉ lưu vị trí đầu đẩy (state 2D), không lưu pose của khối T.
 Để replay một demo trong sim, ta ước lượng pose ban đầu (x, y, góc) của khối T

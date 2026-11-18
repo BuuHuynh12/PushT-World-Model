@@ -1,5 +1,5 @@
 """App xem MÔ HÌNH CHÍNH đẩy khối T: tự đặt khối T + chấm tròn, bấm chạy.
-Mô hình: frame -> WM encoder đọc s_t -> Diffusion sinh 16 PATH -> WM dynamics chọn -> mô hình nghịch -> action.
+Mô hình: frame -> WM -> s_t latent -> Diffusion sinh 16 PATH robot -> WM tưởng tượng, chọn -> action (toán).
 
     .venv\\Scripts\\python.exe app_pusht.py
 
@@ -8,8 +8,6 @@ Mô hình: frame -> WM encoder đọc s_t -> Diffusion sinh 16 PATH -> WM dynami
   Chuột phải               : đặt chấm tròn (đầu đẩy)
   Lăn chuột / Q, E         : xoay khối T (5° mỗi nấc; giữ Shift: 1°)
   R                        : vị trí ngẫu nhiên
-  M                        : đổi bản mô hình (nếu có nhiều bản)
-  C                        : bật/tắt phạt đổi ý (kiên trì một kế hoạch; thử nghiệm)
   SPACE                    : BẮT ĐẦU chạy (bấm lại để dừng)
   G                        : bắt đầu / dừng QUAY GIF (lưu assets/app_<giờ>.gif; tự lưu khi đẩy thành công)
   V                        : bật/tắt vẽ "suy nghĩ" của model (path ứng viên + khối T tưởng tượng)
@@ -30,14 +28,12 @@ os.chdir(Path(__file__).resolve().parent)
 import numpy as np
 import pygame
 
-from pusht_wm.controller import Controller
-from pusht_wm.paths import PATH_POLICY
+from pusht_wm.latent_controller import LATENT_POLICY, LatentController
 from pusht_wm.sim import make_env
 
 # Các bản Diffusion có thể xem (cùng sơ đồ, khác dữ liệu train). Phím M đổi bản (khi đang ĐẶT).
-MODELS = [("Mô hình chính", PATH_POLICY),
-          ("Bản B (học thêm tự chơi, nhanh hơn)", "outputs/wall/path_wallB/ckpt_best.pt")]
-MODELS = [m for m in MODELS if Path(m[1]).exists()] or MODELS[:1]
+# (tên, checkpoint, lớp điều khiển)
+MODELS = [("WM latent + Diffusion path", LATENT_POLICY, LatentController)]
 
 # ---------------- bố cục (px) ----------------
 VIEW = 600                      # bàn chơi
@@ -112,7 +108,6 @@ def main():
     angle_deg = 0.0
     ctrl = None
     model_i = 0                                  # bản đang dùng trong MODELS
-    consistency = False                          # phím C: phạt đổi ý (thử nghiệm, chưa đánh giá)
     rec = None                                   # phím G: danh sách khung đang quay GIF (None = không quay)
     rec_k = 0
     running = fast = dragging = False
@@ -360,8 +355,8 @@ def main():
         h = 224
         cy = card(x, y, w, h, "Mô hình suy nghĩ")
         if imag is None:
-            for i, ln in enumerate(wrap("Mỗi 0.8 s: WM encoder đọc khối T từ ảnh → Diffusion đề xuất 16 đường đi → "
-                                        "WM dynamics tưởng tượng hậu quả của từng đường → chọn đường tốt nhất.",
+            for i, ln in enumerate(wrap("Mỗi 0.8 s: WM đọc ảnh ra s_t → Diffusion đề xuất 16 đường đi cho robot → "
+                                        "WM tưởng tượng hậu quả của từng đường → chọn đường tốt nhất.",
                                         f_body, w - 32)):
                 text(ln, x + 16, cy + i * 22, f_body, MUTED)
             text("Bấm SPACE để bắt đầu.", x + 16, cy + 4 * 22 + 8, f_body, ACCENT)
@@ -376,8 +371,6 @@ def main():
                 (f"Coverage tưởng tượng (+{K} bước)", f"{imag['cov'][i, -1] * 100:.0f}%"),
                 ("Khối T tưởng tượng → đích", f"{d:.0f} đv · {da:.0f}°"),
                 ("Điểm: chọn / tệ nhất", f"{sc[i]:.2f} / {sc.min():.2f}")]
-        if read_err is not None:
-            rows.append(("WM encoder đọc lệch", f"{read_err[0]:.1f} đv · {read_err[1]:.1f}°"))
         if last_check:
             rows.append(("Lần trước: đoán → thật", f"{last_check[0] * 100:.0f}% → {last_check[1] * 100:.0f}%"))
             rows.append(("WM tưởng tượng lệch thật", f"{last_check[2]:.1f} đv · {last_check[3]:.1f}°"))
@@ -392,10 +385,9 @@ def main():
     def draw_legend_card(x, y, w):
         h = BY + VIEW + 4 - y
         cy = card(x, y, w, h, "Chú thích")
-        items = [("line", C_CAND, "16 đường đi Diffusion đề xuất"),
+        items = [("line", C_CAND, "16 đường đi robot Diffusion đề xuất"),
                  ("thick", C_PICK, "đường được chọn (đậm: 8 bước sẽ làm)"),
-                 ("tee_o", C_ACTION, "khối T mà đường đi MUỐN đạt"),
-                 ("tee_g", C_PICK, "khối T WM dynamics TƯỞNG TƯỢNG"),
+                 ("tee_g", C_PICK, "khối T WM TƯỞNG TƯỢNG (cuối đường)"),
                  ("dash", (190, 194, 206), "vùng dữ liệu train/test")]
         for j, (kind, col, lab) in enumerate(items):
             ix, iy = x + 16, cy + j * 23
@@ -446,7 +438,7 @@ def main():
         keys = [("SPACE", "chạy / dừng", None), ("R", "vị trí ngẫu nhiên", None),
                 ("V", "vẽ suy nghĩ", show_imag), ("P", "dừng sau mỗi lần nghĩ", pause_think),
                 ("F", "chạy nhanh", fast), ("G", "quay GIF", rec is not None),
-                ("C", "phạt đổi ý (thử)", consistency), ("Q/E", "xoay khối T", None)]
+                ("Q/E", "xoay khối T", None), ("N", "đi tiếp (khi P bật)", None)]
         cw = (w - 32) // 2
         for j, (k_, lab, st) in enumerate(keys):
             keycap(x + 16 + (j % 2) * cw, cy + (j // 2) * 28, k_, lab, st)
@@ -487,19 +479,13 @@ def main():
                         if ctrl is None:
                             status = "Đang nạp mô hình (lần đầu mất vài giây)..."
                             redraw()
-                            ctrl = Controller(MODELS[model_i][1])
-                        ctrl.consistency = consistency
+                            ctrl = MODELS[model_i][2](MODELS[model_i][1])
                         place()
                         ctrl.reset(obs)   # place() đã xóa biểu đồ cũ
                         running, steps, max_cov, queue, waiting = True, 0, cov, [], False
                         status = "Đang chạy..."
                 elif not running:
-                    if ev.key == pygame.K_c:
-                        consistency = not consistency
-                        if ctrl is not None:
-                            ctrl.consistency = consistency
-                        status = f"Phạt đổi ý (kiên trì 1 kế hoạch): {'BẬT' if consistency else 'tắt'}"
-                    elif ev.key == pygame.K_m and len(MODELS) > 1:
+                    if ev.key == pygame.K_m and len(MODELS) > 1:
                         model_i = (model_i + 1) % len(MODELS)
                         ctrl = None                      # nạp lại khi bấm SPACE
                         status = f"Đã chọn: {MODELS[model_i][0]} — bấm SPACE để chạy"
@@ -566,13 +552,6 @@ def main():
                 queue = list(ctrl.next_actions())
                 thinking = False
                 imag, think_no = ctrl.imagination, think_no + 1
-                if ctrl.read is not None:                                   # WM encoder đọc s_t lệch bao nhiêu
-                    rbx, rby, rang = block_now()
-                    rx, ry, ra = ctrl.read
-                    read_err = (float(np.hypot(rx - rbx, ry - rby)),
-                                float(abs((np.degrees(ra - rang) + 180) % 360 - 180)))
-                else:
-                    read_err = None
                 status = "Đang chạy..."
                 if pause_think:
                     waiting = True

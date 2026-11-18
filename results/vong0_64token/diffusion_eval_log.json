@@ -1,0 +1,44 @@
+[
+ {
+  "step": 5000,
+  "success_rate": 0.72,
+  "ci95": 0.12445614167247834,
+  "steps_to_success_median": 171.0,
+  "mean_max_coverage": 0.9115505615915531
+ },
+ {
+  "step": 10000,
+  "success_rate": 0.76,
+  "ci95": 0.11838140394504536,
+  "steps_to_success_median": 180.5,
+  "mean_max_coverage": 0.9220675861377653
+ },
+ {
+  "step": 15000,
+  "success_rate": 0.78,
+  "ci95": 0.11482321716447418,
+  "steps_to_success_median": 161.0,
+  "mean_max_coverage": 0.9405971850703083
+ },
+ {
+  "step": 20000,
+  "success_rate": 0.88,
+  "ci95": 0.0900747422977163,
+  "steps_to_success_median": 187.5,
+  "mean_max_coverage": 0.9368127266092361
+ },
+ {
+  "step": 25000,
+  "success_rate": 0.78,
+  "ci95": 0.11482321716447418,
+  "steps_to_success_median": 172.0,
+  "mean_max_coverage": 0.9318674746088941
+ },
+ {
+  "step": 30000,
+  "success_rate": 0.82,
+  "ci95": 0.10649132922449603,
+  "steps_to_success_median": 200.0,
+  "mean_max_coverage": 0.9327132434165069
+ }
+]

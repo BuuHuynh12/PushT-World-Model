@@ -2,16 +2,14 @@
 .venv/
 __pycache__/
 *.pyc
-# thí nghiệm cũ + kết quả chạy lại (không đưa lên repo)
-archive/
+# kết quả chạy (checkpoint, log lớn); kết quả gọn nằm trong results/
 outputs/
 # gói chép lên máy thuê
 *.tar
 *.tgz
 *.zip
-# dữ liệu lớn: chỉ giữ nhãn khối T của demo + mô tả dữ liệu sim
+# dữ liệu lớn: chỉ giữ mô tả dữ liệu sim
 data/*
-!data/demo_state.npz
 !data/sim_v1.json
 !data/sim_v2.json
 # tài liệu nội bộ cho nhóm (không đưa lên repo)

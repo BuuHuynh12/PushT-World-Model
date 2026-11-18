@@ -1,0 +1,342 @@
+latent dinov2: 545556 frame, 64 token x 128 | GPU | train 2666 ep / val 140 ep (5s)
+tham số world model: 9.42M | cửa sổ train 18 frame
+step    100 tf_z 0.2247 ro_z 0.6400 tf_r 0.05734 ro_r 0.06392 fde 176.28 đọc 0.3240 lr 3.0e-05 2.0 it/s
+step    200 tf_z 0.2195 ro_z 0.6151 tf_r 0.00668 ro_r 0.01219 fde 57.74 đọc 0.1235 lr 6.0e-05 2.0 it/s
+step    300 tf_z 0.2349 ro_z 0.6095 tf_r 0.00513 ro_r 0.01076 fde 48.37 đọc 0.0967 lr 9.0e-05 2.0 it/s
+step    400 tf_z 0.2222 ro_z 0.5772 tf_r 0.00444 ro_r 0.00991 fde 44.55 đọc 0.0802 lr 1.2e-04 2.0 it/s
+step    500 tf_z 0.2153 ro_z 0.5549 tf_r 0.00390 ro_r 0.00928 fde 39.63 đọc 0.0686 lr 1.5e-04 2.0 it/s
+step    600 tf_z 0.2213 ro_z 0.5507 tf_r 0.00357 ro_r 0.00898 fde 39.15 đọc 0.0650 lr 1.8e-04 2.0 it/s
+step    700 tf_z 0.2184 ro_z 0.5326 tf_r 0.00309 ro_r 0.00809 fde 38.43 đọc 0.0615 lr 2.1e-04 2.0 it/s
+step    800 tf_z 0.2244 ro_z 0.5330 tf_r 0.00277 ro_r 0.00673 fde 37.92 đọc 0.0592 lr 2.4e-04 2.0 it/s
+step    900 tf_z 0.2085 ro_z 0.5057 tf_r 0.00251 ro_r 0.00668 fde 36.47 đọc 0.0570 lr 2.7e-04 2.0 it/s
+step   1000 tf_z 0.2213 ro_z 0.5069 tf_r 0.00218 ro_r 0.00632 fde 35.04 đọc 0.0544 lr 3.0e-04 2.0 it/s
+step   1100 tf_z 0.2155 ro_z 0.4937 tf_r 0.00206 ro_r 0.00597 fde 34.56 đọc 0.0524 lr 3.0e-04 2.0 it/s
+step   1200 tf_z 0.2164 ro_z 0.4925 tf_r 0.00193 ro_r 0.00572 fde 32.64 đọc 0.0487 lr 3.0e-04 2.0 it/s
+step   1300 tf_z 0.2131 ro_z 0.4769 tf_r 0.00163 ro_r 0.00507 fde 31.53 đọc 0.0458 lr 3.0e-04 2.0 it/s
+step   1400 tf_z 0.2095 ro_z 0.4724 tf_r 0.00157 ro_r 0.00485 fde 31.62 đọc 0.0450 lr 3.0e-04 2.0 it/s
+step   1500 tf_z 0.2024 ro_z 0.4583 tf_r 0.00156 ro_r 0.00457 fde 29.43 đọc 0.0412 lr 3.0e-04 2.0 it/s
+step   1600 tf_z 0.2082 ro_z 0.4629 tf_r 0.00143 ro_r 0.00424 fde 30.10 đọc 0.0406 lr 3.0e-04 2.0 it/s
+step   1700 tf_z 0.2095 ro_z 0.4580 tf_r 0.00150 ro_r 0.00441 fde 27.90 đọc 0.0377 lr 3.0e-04 2.0 it/s
+step   1800 tf_z 0.2014 ro_z 0.4449 tf_r 0.00130 ro_r 0.00410 fde 26.89 đọc 0.0360 lr 3.0e-04 2.0 it/s
+step   1900 tf_z 0.2029 ro_z 0.4459 tf_r 0.00127 ro_r 0.00418 fde 27.09 đọc 0.0354 lr 3.0e-04 2.0 it/s
+step   2000 tf_z 0.2020 ro_z 0.4409 tf_r 0.00115 ro_r 0.00373 fde 26.65 đọc 0.0340 lr 3.0e-04 2.0 it/s
+[val 2000] FDE khối T sau 16 bước: 27.67 (đoán không đổi: 33.47)
+[val 2000] MSE latent (WM | copy) k1: 0.224|0.250 k4: 0.374|0.482 k8: 0.469|0.672 k16: 0.595|0.920 | reward MAE k1 0.0234 k16 0.0489 corr 0.984
+step   2100 tf_z 0.1960 ro_z 0.4316 tf_r 0.00120 ro_r 0.00373 fde 26.07 đọc 0.0330 lr 3.0e-04 2.0 it/s
+step   2200 tf_z 0.1975 ro_z 0.4328 tf_r 0.00105 ro_r 0.00340 fde 25.87 đọc 0.0319 lr 3.0e-04 2.0 it/s
+step   2300 tf_z 0.1976 ro_z 0.4307 tf_r 0.00104 ro_r 0.00355 fde 25.53 đọc 0.0306 lr 3.0e-04 2.0 it/s
+step   2400 tf_z 0.1969 ro_z 0.4252 tf_r 0.00102 ro_r 0.00348 fde 24.77 đọc 0.0292 lr 3.0e-04 2.0 it/s
+step   2500 tf_z 0.1928 ro_z 0.4234 tf_r 0.00101 ro_r 0.00339 fde 24.13 đọc 0.0290 lr 3.0e-04 2.0 it/s
+step   2600 tf_z 0.1990 ro_z 0.4238 tf_r 0.00094 ro_r 0.00301 fde 24.31 đọc 0.0280 lr 3.0e-04 2.0 it/s
+step   2700 tf_z 0.1946 ro_z 0.4167 tf_r 0.00089 ro_r 0.00299 fde 23.02 đọc 0.0269 lr 3.0e-04 2.0 it/s
+step   2800 tf_z 0.1960 ro_z 0.4179 tf_r 0.00095 ro_r 0.00320 fde 22.99 đọc 0.0266 lr 3.0e-04 2.0 it/s
+step   2900 tf_z 0.1954 ro_z 0.4140 tf_r 0.00087 ro_r 0.00273 fde 22.45 đọc 0.0255 lr 3.0e-04 2.0 it/s
+step   3000 tf_z 0.1934 ro_z 0.4067 tf_r 0.00081 ro_r 0.00263 fde 21.71 đọc 0.0247 lr 3.0e-04 2.1 it/s
+step   3100 tf_z 0.1962 ro_z 0.4127 tf_r 0.00082 ro_r 0.00275 fde 21.91 đọc 0.0247 lr 3.0e-04 2.0 it/s
+step   3200 tf_z 0.1922 ro_z 0.4061 tf_r 0.00085 ro_r 0.00289 fde 21.66 đọc 0.0238 lr 3.0e-04 2.0 it/s
+step   3300 tf_z 0.1880 ro_z 0.3998 tf_r 0.00082 ro_r 0.00261 fde 21.02 đọc 0.0236 lr 3.0e-04 2.0 it/s
+step   3400 tf_z 0.1915 ro_z 0.3970 tf_r 0.00080 ro_r 0.00255 fde 20.84 đọc 0.0228 lr 2.9e-04 2.1 it/s
+step   3500 tf_z 0.1880 ro_z 0.3919 tf_r 0.00072 ro_r 0.00250 fde 20.13 đọc 0.0223 lr 2.9e-04 2.1 it/s
+step   3600 tf_z 0.1876 ro_z 0.3908 tf_r 0.00076 ro_r 0.00238 fde 19.84 đọc 0.0220 lr 2.9e-04 1.9 it/s
+step   3700 tf_z 0.1924 ro_z 0.3981 tf_r 0.00075 ro_r 0.00234 fde 20.52 đọc 0.0221 lr 2.9e-04 2.0 it/s
+step   3800 tf_z 0.1878 ro_z 0.3921 tf_r 0.00068 ro_r 0.00229 fde 20.01 đọc 0.0221 lr 2.9e-04 2.1 it/s
+step   3900 tf_z 0.1919 ro_z 0.3879 tf_r 0.00073 ro_r 0.00220 fde 18.90 đọc 0.0216 lr 2.9e-04 2.0 it/s
+step   4000 tf_z 0.1851 ro_z 0.3822 tf_r 0.00072 ro_r 0.00218 fde 19.10 đọc 0.0210 lr 2.9e-04 2.1 it/s
+[val 4000] FDE khối T sau 16 bước: 21.85 (đoán không đổi: 33.47)
+[val 4000] MSE latent (WM | copy) k1: 0.207|0.250 k4: 0.335|0.482 k8: 0.409|0.672 k16: 0.500|0.920 | reward MAE k1 0.0207 k16 0.0426 corr 0.989
+step   4100 tf_z 0.1857 ro_z 0.3791 tf_r 0.00067 ro_r 0.00207 fde 18.68 đọc 0.0209 lr 2.9e-04 2.1 it/s
+step   4200 tf_z 0.1801 ro_z 0.3738 tf_r 0.00063 ro_r 0.00196 fde 19.04 đọc 0.0208 lr 2.9e-04 2.1 it/s
+step   4300 tf_z 0.1869 ro_z 0.3792 tf_r 0.00068 ro_r 0.00210 fde 19.15 đọc 0.0206 lr 2.9e-04 2.0 it/s
+step   4400 tf_z 0.1839 ro_z 0.3769 tf_r 0.00066 ro_r 0.00198 fde 18.80 đọc 0.0208 lr 2.9e-04 2.1 it/s
+step   4500 tf_z 0.1789 ro_z 0.3727 tf_r 0.00062 ro_r 0.00191 fde 18.13 đọc 0.0205 lr 2.9e-04 2.1 it/s
+step   4600 tf_z 0.1799 ro_z 0.3680 tf_r 0.00061 ro_r 0.00175 fde 18.09 đọc 0.0203 lr 2.9e-04 2.1 it/s
+step   4700 tf_z 0.1854 ro_z 0.3709 tf_r 0.00062 ro_r 0.00188 fde 17.48 đọc 0.0195 lr 2.9e-04 2.0 it/s
+step   4800 tf_z 0.1803 ro_z 0.3662 tf_r 0.00057 ro_r 0.00170 fde 17.37 đọc 0.0196 lr 2.9e-04 2.0 it/s
+step   4900 tf_z 0.1842 ro_z 0.3666 tf_r 0.00057 ro_r 0.00164 fde 17.16 đọc 0.0193 lr 2.9e-04 2.0 it/s
+step   5000 tf_z 0.1818 ro_z 0.3614 tf_r 0.00058 ro_r 0.00176 fde 16.92 đọc 0.0192 lr 2.9e-04 2.0 it/s
+step   5100 tf_z 0.1774 ro_z 0.3581 tf_r 0.00059 ro_r 0.00179 fde 16.99 đọc 0.0189 lr 2.9e-04 2.0 it/s
+step   5200 tf_z 0.1799 ro_z 0.3587 tf_r 0.00058 ro_r 0.00166 fde 16.90 đọc 0.0190 lr 2.8e-04 2.1 it/s
+step   5300 tf_z 0.1834 ro_z 0.3611 tf_r 0.00056 ro_r 0.00165 fde 16.34 đọc 0.0185 lr 2.8e-04 2.1 it/s
+step   5400 tf_z 0.1812 ro_z 0.3585 tf_r 0.00057 ro_r 0.00167 fde 16.90 đọc 0.0191 lr 2.8e-04 2.1 it/s
+step   5500 tf_z 0.1793 ro_z 0.3577 tf_r 0.00054 ro_r 0.00162 fde 16.11 đọc 0.0183 lr 2.8e-04 2.1 it/s
+step   5600 tf_z 0.1787 ro_z 0.3500 tf_r 0.00053 ro_r 0.00146 fde 16.04 đọc 0.0182 lr 2.8e-04 2.1 it/s
+step   5700 tf_z 0.1792 ro_z 0.3540 tf_r 0.00049 ro_r 0.00142 fde 16.21 đọc 0.0184 lr 2.8e-04 2.1 it/s
+step   5800 tf_z 0.1758 ro_z 0.3496 tf_r 0.00052 ro_r 0.00158 fde 16.15 đọc 0.0182 lr 2.8e-04 2.1 it/s
+step   5900 tf_z 0.1766 ro_z 0.3464 tf_r 0.00051 ro_r 0.00154 fde 15.52 đọc 0.0182 lr 2.8e-04 2.1 it/s
+step   6000 tf_z 0.1735 ro_z 0.3437 tf_r 0.00049 ro_r 0.00140 fde 15.45 đọc 0.0176 lr 2.8e-04 2.1 it/s
+[val 6000] FDE khối T sau 16 bước: 18.37 (đoán không đổi: 33.47)
+[val 6000] MSE latent (WM | copy) k1: 0.198|0.250 k4: 0.312|0.482 k8: 0.374|0.672 k16: 0.455|0.920 | reward MAE k1 0.0205 k16 0.0385 corr 0.992
+step   6100 tf_z 0.1790 ro_z 0.3481 tf_r 0.00048 ro_r 0.00141 fde 15.09 đọc 0.0175 lr 2.8e-04 2.1 it/s
+step   6200 tf_z 0.1736 ro_z 0.3405 tf_r 0.00054 ro_r 0.00153 fde 15.06 đọc 0.0173 lr 2.8e-04 2.1 it/s
+step   6300 tf_z 0.1773 ro_z 0.3442 tf_r 0.00048 ro_r 0.00137 fde 15.08 đọc 0.0173 lr 2.8e-04 2.1 it/s
+step   6400 tf_z 0.1790 ro_z 0.3432 tf_r 0.00048 ro_r 0.00148 fde 14.60 đọc 0.0171 lr 2.8e-04 2.1 it/s
+step   6500 tf_z 0.1758 ro_z 0.3388 tf_r 0.00050 ro_r 0.00137 fde 14.60 đọc 0.0175 lr 2.7e-04 2.1 it/s
+step   6600 tf_z 0.1760 ro_z 0.3383 tf_r 0.00049 ro_r 0.00137 fde 14.86 đọc 0.0170 lr 2.7e-04 2.1 it/s
+step   6700 tf_z 0.1710 ro_z 0.3364 tf_r 0.00046 ro_r 0.00133 fde 14.05 đọc 0.0167 lr 2.7e-04 2.1 it/s
+step   6800 tf_z 0.1728 ro_z 0.3305 tf_r 0.00044 ro_r 0.00127 fde 14.05 đọc 0.0166 lr 2.7e-04 2.1 it/s
+step   6900 tf_z 0.1751 ro_z 0.3383 tf_r 0.00046 ro_r 0.00131 fde 14.34 đọc 0.0168 lr 2.7e-04 2.1 it/s
+step   7000 tf_z 0.1701 ro_z 0.3279 tf_r 0.00047 ro_r 0.00126 fde 13.85 đọc 0.0162 lr 2.7e-04 2.1 it/s
+step   7100 tf_z 0.1722 ro_z 0.3329 tf_r 0.00047 ro_r 0.00128 fde 13.98 đọc 0.0163 lr 2.7e-04 2.0 it/s
+step   7200 tf_z 0.1739 ro_z 0.3300 tf_r 0.00044 ro_r 0.00126 fde 13.46 đọc 0.0162 lr 2.7e-04 2.1 it/s
+step   7300 tf_z 0.1740 ro_z 0.3312 tf_r 0.00043 ro_r 0.00130 fde 13.90 đọc 0.0163 lr 2.7e-04 2.0 it/s
+step   7400 tf_z 0.1754 ro_z 0.3301 tf_r 0.00046 ro_r 0.00118 fde 13.32 đọc 0.0160 lr 2.7e-04 2.0 it/s
+step   7500 tf_z 0.1741 ro_z 0.3308 tf_r 0.00045 ro_r 0.00137 fde 13.60 đọc 0.0160 lr 2.6e-04 2.0 it/s
+step   7600 tf_z 0.1731 ro_z 0.3266 tf_r 0.00041 ro_r 0.00120 fde 13.66 đọc 0.0157 lr 2.6e-04 2.0 it/s
+step   7700 tf_z 0.1683 ro_z 0.3195 tf_r 0.00039 ro_r 0.00116 fde 12.95 đọc 0.0153 lr 2.6e-04 2.0 it/s
+step   7800 tf_z 0.1718 ro_z 0.3244 tf_r 0.00040 ro_r 0.00121 fde 13.11 đọc 0.0157 lr 2.6e-04 2.0 it/s
+step   7900 tf_z 0.1709 ro_z 0.3186 tf_r 0.00038 ro_r 0.00110 fde 13.21 đọc 0.0157 lr 2.6e-04 2.0 it/s
+step   8000 tf_z 0.1729 ro_z 0.3243 tf_r 0.00040 ro_r 0.00105 fde 12.53 đọc 0.0152 lr 2.6e-04 2.0 it/s
+[val 8000] FDE khối T sau 16 bước: 15.70 (đoán không đổi: 33.47)
+[val 8000] MSE latent (WM | copy) k1: 0.191|0.250 k4: 0.295|0.482 k8: 0.349|0.672 k16: 0.421|0.920 | reward MAE k1 0.0175 k16 0.0333 corr 0.993
+step   8100 tf_z 0.1690 ro_z 0.3222 tf_r 0.00038 ro_r 0.00114 fde 13.56 đọc 0.0154 lr 2.6e-04 2.0 it/s
+step   8200 tf_z 0.1674 ro_z 0.3216 tf_r 0.00039 ro_r 0.00108 fde 12.66 đọc 0.0154 lr 2.6e-04 2.0 it/s
+step   8300 tf_z 0.1722 ro_z 0.3179 tf_r 0.00040 ro_r 0.00109 fde 12.69 đọc 0.0157 lr 2.6e-04 2.0 it/s
+step   8400 tf_z 0.1754 ro_z 0.3252 tf_r 0.00038 ro_r 0.00106 fde 12.66 đọc 0.0150 lr 2.5e-04 2.0 it/s
+step   8500 tf_z 0.1692 ro_z 0.3145 tf_r 0.00036 ro_r 0.00104 fde 12.44 đọc 0.0150 lr 2.5e-04 2.0 it/s
+step   8600 tf_z 0.1690 ro_z 0.3140 tf_r 0.00039 ro_r 0.00101 fde 12.54 đọc 0.0147 lr 2.5e-04 2.0 it/s
+step   8700 tf_z 0.1685 ro_z 0.3156 tf_r 0.00038 ro_r 0.00114 fde 13.12 đọc 0.0148 lr 2.5e-04 2.0 it/s
+step   8800 tf_z 0.1665 ro_z 0.3105 tf_r 0.00038 ro_r 0.00106 fde 12.26 đọc 0.0148 lr 2.5e-04 2.0 it/s
+step   8900 tf_z 0.1695 ro_z 0.3124 tf_r 0.00037 ro_r 0.00107 fde 12.02 đọc 0.0143 lr 2.5e-04 2.0 it/s
+step   9000 tf_z 0.1650 ro_z 0.3082 tf_r 0.00036 ro_r 0.00103 fde 12.11 đọc 0.0146 lr 2.5e-04 2.0 it/s
+step   9100 tf_z 0.1666 ro_z 0.3098 tf_r 0.00037 ro_r 0.00100 fde 12.09 đọc 0.0146 lr 2.5e-04 2.0 it/s
+step   9200 tf_z 0.1682 ro_z 0.3103 tf_r 0.00035 ro_r 0.00099 fde 12.12 đọc 0.0147 lr 2.4e-04 2.0 it/s
+step   9300 tf_z 0.1685 ro_z 0.3114 tf_r 0.00037 ro_r 0.00102 fde 12.21 đọc 0.0146 lr 2.4e-04 2.0 it/s
+step   9400 tf_z 0.1666 ro_z 0.3093 tf_r 0.00036 ro_r 0.00101 fde 12.22 đọc 0.0144 lr 2.4e-04 2.0 it/s
+step   9500 tf_z 0.1659 ro_z 0.3058 tf_r 0.00035 ro_r 0.00099 fde 11.78 đọc 0.0141 lr 2.4e-04 2.0 it/s
+step   9600 tf_z 0.1679 ro_z 0.3060 tf_r 0.00036 ro_r 0.00100 fde 11.31 đọc 0.0141 lr 2.4e-04 2.0 it/s
+step   9700 tf_z 0.1631 ro_z 0.3014 tf_r 0.00033 ro_r 0.00093 fde 11.23 đọc 0.0138 lr 2.4e-04 2.0 it/s
+step   9800 tf_z 0.1693 ro_z 0.3056 tf_r 0.00035 ro_r 0.00096 fde 11.56 đọc 0.0140 lr 2.4e-04 2.0 it/s
+step   9900 tf_z 0.1653 ro_z 0.3009 tf_r 0.00034 ro_r 0.00093 fde 11.34 đọc 0.0139 lr 2.4e-04 2.0 it/s
+step  10000 tf_z 0.1650 ro_z 0.3052 tf_r 0.00033 ro_r 0.00091 fde 11.63 đọc 0.0139 lr 2.3e-04 2.0 it/s
+[val 10000] FDE khối T sau 16 bước: 14.15 (đoán không đổi: 33.47)
+[val 10000] MSE latent (WM | copy) k1: 0.187|0.250 k4: 0.284|0.482 k8: 0.329|0.672 k16: 0.395|0.920 | reward MAE k1 0.0152 k16 0.0290 corr 0.994
+step  10100 tf_z 0.1664 ro_z 0.3018 tf_r 0.00034 ro_r 0.00087 fde 11.21 đọc 0.0140 lr 2.3e-04 2.0 it/s
+step  10200 tf_z 0.1641 ro_z 0.3020 tf_r 0.00033 ro_r 0.00096 fde 11.13 đọc 0.0138 lr 2.3e-04 2.0 it/s
+step  10300 tf_z 0.1671 ro_z 0.3020 tf_r 0.00032 ro_r 0.00085 fde 11.39 đọc 0.0139 lr 2.3e-04 2.0 it/s
+step  10400 tf_z 0.1650 ro_z 0.2982 tf_r 0.00033 ro_r 0.00088 fde 10.63 đọc 0.0134 lr 2.3e-04 2.0 it/s
+step  10500 tf_z 0.1690 ro_z 0.3033 tf_r 0.00031 ro_r 0.00083 fde 11.39 đọc 0.0134 lr 2.3e-04 2.0 it/s
+step  10600 tf_z 0.1628 ro_z 0.2975 tf_r 0.00032 ro_r 0.00086 fde 11.28 đọc 0.0132 lr 2.3e-04 2.0 it/s
+step  10700 tf_z 0.1672 ro_z 0.2989 tf_r 0.00031 ro_r 0.00085 fde 10.52 đọc 0.0132 lr 2.2e-04 2.0 it/s
+step  10800 tf_z 0.1684 ro_z 0.2983 tf_r 0.00032 ro_r 0.00088 fde 10.55 đọc 0.0132 lr 2.2e-04 2.0 it/s
+step  10900 tf_z 0.1593 ro_z 0.2923 tf_r 0.00030 ro_r 0.00081 fde 10.63 đọc 0.0135 lr 2.2e-04 2.0 it/s
+step  11000 tf_z 0.1620 ro_z 0.2920 tf_r 0.00031 ro_r 0.00085 fde 10.11 đọc 0.0127 lr 2.2e-04 2.0 it/s
+step  11100 tf_z 0.1654 ro_z 0.2935 tf_r 0.00030 ro_r 0.00076 fde 10.44 đọc 0.0129 lr 2.2e-04 2.0 it/s
+step  11200 tf_z 0.1645 ro_z 0.2921 tf_r 0.00031 ro_r 0.00092 fde 10.34 đọc 0.0128 lr 2.2e-04 2.0 it/s
+step  11300 tf_z 0.1650 ro_z 0.2931 tf_r 0.00032 ro_r 0.00082 fde 10.56 đọc 0.0126 lr 2.2e-04 2.0 it/s
+step  11400 tf_z 0.1618 ro_z 0.2881 tf_r 0.00030 ro_r 0.00078 fde 10.24 đọc 0.0125 lr 2.1e-04 2.0 it/s
+step  11500 tf_z 0.1642 ro_z 0.2920 tf_r 0.00029 ro_r 0.00077 fde 10.22 đọc 0.0127 lr 2.1e-04 2.0 it/s
+step  11600 tf_z 0.1633 ro_z 0.2935 tf_r 0.00030 ro_r 0.00076 fde 10.23 đọc 0.0127 lr 2.1e-04 2.0 it/s
+step  11700 tf_z 0.1617 ro_z 0.2909 tf_r 0.00029 ro_r 0.00083 fde 10.03 đọc 0.0126 lr 2.1e-04 2.0 it/s
+step  11800 tf_z 0.1622 ro_z 0.2893 tf_r 0.00028 ro_r 0.00080 fde 10.28 đọc 0.0124 lr 2.1e-04 2.0 it/s
+step  11900 tf_z 0.1632 ro_z 0.2897 tf_r 0.00029 ro_r 0.00076 fde 9.91 đọc 0.0126 lr 2.1e-04 2.0 it/s
+step  12000 tf_z 0.1616 ro_z 0.2890 tf_r 0.00029 ro_r 0.00079 fde 10.06 đọc 0.0123 lr 2.1e-04 2.0 it/s
+[val 12000] FDE khối T sau 16 bước: 12.18 (đoán không đổi: 33.47)
+[val 12000] MSE latent (WM | copy) k1: 0.183|0.250 k4: 0.270|0.482 k8: 0.310|0.672 k16: 0.372|0.920 | reward MAE k1 0.0134 k16 0.0251 corr 0.996
+step  12100 tf_z 0.1585 ro_z 0.2873 tf_r 0.00027 ro_r 0.00078 fde 10.03 đọc 0.0124 lr 2.0e-04 2.0 it/s
+step  12200 tf_z 0.1602 ro_z 0.2865 tf_r 0.00027 ro_r 0.00072 fde 9.80 đọc 0.0123 lr 2.0e-04 2.0 it/s
+step  12300 tf_z 0.1572 ro_z 0.2824 tf_r 0.00027 ro_r 0.00070 fde 9.83 đọc 0.0123 lr 2.0e-04 2.0 it/s
+step  12400 tf_z 0.1625 ro_z 0.2898 tf_r 0.00027 ro_r 0.00073 fde 10.13 đọc 0.0126 lr 2.0e-04 2.0 it/s
+step  12500 tf_z 0.1614 ro_z 0.2838 tf_r 0.00028 ro_r 0.00073 fde 9.62 đọc 0.0119 lr 2.0e-04 2.0 it/s
+step  12600 tf_z 0.1655 ro_z 0.2866 tf_r 0.00026 ro_r 0.00068 fde 9.27 đọc 0.0120 lr 2.0e-04 2.0 it/s
+step  12700 tf_z 0.1604 ro_z 0.2848 tf_r 0.00027 ro_r 0.00067 fde 9.73 đọc 0.0120 lr 1.9e-04 2.0 it/s
+step  12800 tf_z 0.1618 ro_z 0.2853 tf_r 0.00026 ro_r 0.00066 fde 9.42 đọc 0.0120 lr 1.9e-04 2.0 it/s
+step  12900 tf_z 0.1594 ro_z 0.2788 tf_r 0.00028 ro_r 0.00069 fde 9.05 đọc 0.0117 lr 1.9e-04 2.0 it/s
+step  13000 tf_z 0.1598 ro_z 0.2786 tf_r 0.00026 ro_r 0.00068 fde 9.40 đọc 0.0119 lr 1.9e-04 2.0 it/s
+step  13100 tf_z 0.1599 ro_z 0.2820 tf_r 0.00027 ro_r 0.00066 fde 9.29 đọc 0.0114 lr 1.9e-04 2.0 it/s
+step  13200 tf_z 0.1580 ro_z 0.2787 tf_r 0.00028 ro_r 0.00067 fde 9.20 đọc 0.0117 lr 1.9e-04 2.0 it/s
+step  13300 tf_z 0.1585 ro_z 0.2784 tf_r 0.00027 ro_r 0.00077 fde 9.03 đọc 0.0114 lr 1.9e-04 2.0 it/s
+step  13400 tf_z 0.1643 ro_z 0.2812 tf_r 0.00025 ro_r 0.00067 fde 9.19 đọc 0.0116 lr 1.8e-04 2.0 it/s
+step  13500 tf_z 0.1588 ro_z 0.2733 tf_r 0.00026 ro_r 0.00061 fde 8.68 đọc 0.0114 lr 1.8e-04 2.0 it/s
+step  13600 tf_z 0.1593 ro_z 0.2753 tf_r 0.00025 ro_r 0.00063 fde 8.71 đọc 0.0115 lr 1.8e-04 2.0 it/s
+step  13700 tf_z 0.1606 ro_z 0.2786 tf_r 0.00025 ro_r 0.00066 fde 8.99 đọc 0.0116 lr 1.8e-04 2.0 it/s
+step  13800 tf_z 0.1552 ro_z 0.2756 tf_r 0.00026 ro_r 0.00072 fde 8.70 đọc 0.0112 lr 1.8e-04 2.0 it/s
+step  13900 tf_z 0.1559 ro_z 0.2731 tf_r 0.00025 ro_r 0.00064 fde 8.45 đọc 0.0110 lr 1.8e-04 2.0 it/s
+step  14000 tf_z 0.1601 ro_z 0.2764 tf_r 0.00025 ro_r 0.00068 fde 8.87 đọc 0.0113 lr 1.7e-04 2.0 it/s
+[val 14000] FDE khối T sau 16 bước: 11.38 (đoán không đổi: 33.47)
+[val 14000] MSE latent (WM | copy) k1: 0.181|0.250 k4: 0.265|0.482 k8: 0.302|0.672 k16: 0.361|0.920 | reward MAE k1 0.0134 k16 0.0255 corr 0.996
+step  14100 tf_z 0.1587 ro_z 0.2761 tf_r 0.00024 ro_r 0.00063 fde 8.46 đọc 0.0113 lr 1.7e-04 2.0 it/s
+step  14200 tf_z 0.1590 ro_z 0.2755 tf_r 0.00025 ro_r 0.00062 fde 8.60 đọc 0.0110 lr 1.7e-04 2.0 it/s
+step  14300 tf_z 0.1573 ro_z 0.2739 tf_r 0.00023 ro_r 0.00061 fde 8.61 đọc 0.0112 lr 1.7e-04 2.0 it/s
+step  14400 tf_z 0.1573 ro_z 0.2740 tf_r 0.00023 ro_r 0.00060 fde 8.42 đọc 0.0108 lr 1.7e-04 2.0 it/s
+step  14500 tf_z 0.1594 ro_z 0.2737 tf_r 0.00023 ro_r 0.00055 fde 8.41 đọc 0.0110 lr 1.7e-04 2.0 it/s
+step  14600 tf_z 0.1608 ro_z 0.2776 tf_r 0.00024 ro_r 0.00061 fde 8.51 đọc 0.0111 lr 1.6e-04 2.0 it/s
+step  14700 tf_z 0.1588 ro_z 0.2712 tf_r 0.00023 ro_r 0.00058 fde 8.24 đọc 0.0109 lr 1.6e-04 2.0 it/s
+step  14800 tf_z 0.1546 ro_z 0.2667 tf_r 0.00022 ro_r 0.00052 fde 8.28 đọc 0.0107 lr 1.6e-04 2.0 it/s
+step  14900 tf_z 0.1561 ro_z 0.2697 tf_r 0.00022 ro_r 0.00057 fde 7.94 đọc 0.0106 lr 1.6e-04 2.0 it/s
+step  15000 tf_z 0.1596 ro_z 0.2730 tf_r 0.00022 ro_r 0.00056 fde 8.30 đọc 0.0107 lr 1.6e-04 2.0 it/s
+step  15100 tf_z 0.1557 ro_z 0.2709 tf_r 0.00022 ro_r 0.00060 fde 8.24 đọc 0.0106 lr 1.6e-04 2.0 it/s
+step  15200 tf_z 0.1550 ro_z 0.2677 tf_r 0.00023 ro_r 0.00056 fde 7.99 đọc 0.0105 lr 1.5e-04 2.0 it/s
+step  15300 tf_z 0.1568 ro_z 0.2675 tf_r 0.00021 ro_r 0.00051 fde 7.91 đọc 0.0106 lr 1.5e-04 2.0 it/s
+step  15400 tf_z 0.1579 ro_z 0.2693 tf_r 0.00022 ro_r 0.00054 fde 7.94 đọc 0.0105 lr 1.5e-04 2.0 it/s
+step  15500 tf_z 0.1588 ro_z 0.2685 tf_r 0.00023 ro_r 0.00053 fde 8.24 đọc 0.0105 lr 1.5e-04 2.0 it/s
+step  15600 tf_z 0.1569 ro_z 0.2674 tf_r 0.00022 ro_r 0.00049 fde 8.01 đọc 0.0104 lr 1.5e-04 2.0 it/s
+step  15700 tf_z 0.1572 ro_z 0.2679 tf_r 0.00021 ro_r 0.00053 fde 7.74 đọc 0.0104 lr 1.5e-04 2.0 it/s
+step  15800 tf_z 0.1555 ro_z 0.2669 tf_r 0.00022 ro_r 0.00056 fde 7.78 đọc 0.0102 lr 1.5e-04 2.0 it/s
+step  15900 tf_z 0.1587 ro_z 0.2684 tf_r 0.00020 ro_r 0.00051 fde 7.91 đọc 0.0103 lr 1.4e-04 2.0 it/s
+step  16000 tf_z 0.1547 ro_z 0.2623 tf_r 0.00020 ro_r 0.00050 fde 7.54 đọc 0.0102 lr 1.4e-04 2.0 it/s
+[val 16000] FDE khối T sau 16 bước: 9.95 (đoán không đổi: 33.47)
+[val 16000] MSE latent (WM | copy) k1: 0.179|0.250 k4: 0.259|0.482 k8: 0.292|0.672 k16: 0.348|0.920 | reward MAE k1 0.0132 k16 0.0236 corr 0.996
+step  16100 tf_z 0.1573 ro_z 0.2669 tf_r 0.00021 ro_r 0.00051 fde 7.42 đọc 0.0100 lr 1.4e-04 2.0 it/s
+step  16200 tf_z 0.1553 ro_z 0.2639 tf_r 0.00021 ro_r 0.00050 fde 7.55 đọc 0.0100 lr 1.4e-04 2.0 it/s
+step  16300 tf_z 0.1537 ro_z 0.2623 tf_r 0.00022 ro_r 0.00052 fde 7.46 đọc 0.0099 lr 1.4e-04 2.0 it/s
+step  16400 tf_z 0.1541 ro_z 0.2604 tf_r 0.00020 ro_r 0.00049 fde 7.29 đọc 0.0098 lr 1.4e-04 2.0 it/s
+step  16500 tf_z 0.1560 ro_z 0.2638 tf_r 0.00020 ro_r 0.00049 fde 7.32 đọc 0.0100 lr 1.3e-04 2.0 it/s
+step  16600 tf_z 0.1569 ro_z 0.2626 tf_r 0.00020 ro_r 0.00050 fde 7.16 đọc 0.0099 lr 1.3e-04 2.0 it/s
+step  16700 tf_z 0.1556 ro_z 0.2633 tf_r 0.00020 ro_r 0.00048 fde 7.05 đọc 0.0097 lr 1.3e-04 2.0 it/s
+step  16800 tf_z 0.1537 ro_z 0.2604 tf_r 0.00019 ro_r 0.00044 fde 6.86 đọc 0.0097 lr 1.3e-04 2.0 it/s
+step  16900 tf_z 0.1552 ro_z 0.2613 tf_r 0.00020 ro_r 0.00046 fde 7.13 đọc 0.0098 lr 1.3e-04 2.0 it/s
+step  17000 tf_z 0.1561 ro_z 0.2595 tf_r 0.00020 ro_r 0.00043 fde 6.69 đọc 0.0095 lr 1.3e-04 2.0 it/s
+step  17100 tf_z 0.1591 ro_z 0.2641 tf_r 0.00019 ro_r 0.00044 fde 6.85 đọc 0.0095 lr 1.2e-04 2.0 it/s
+step  17200 tf_z 0.1507 ro_z 0.2583 tf_r 0.00019 ro_r 0.00046 fde 6.91 đọc 0.0096 lr 1.2e-04 2.0 it/s
+step  17300 tf_z 0.1527 ro_z 0.2559 tf_r 0.00021 ro_r 0.00047 fde 6.86 đọc 0.0094 lr 1.2e-04 2.0 it/s
+step  17400 tf_z 0.1552 ro_z 0.2587 tf_r 0.00020 ro_r 0.00044 fde 6.88 đọc 0.0095 lr 1.2e-04 2.0 it/s
+step  17500 tf_z 0.1559 ro_z 0.2592 tf_r 0.00019 ro_r 0.00043 fde 6.83 đọc 0.0095 lr 1.2e-04 2.0 it/s
+step  17600 tf_z 0.1546 ro_z 0.2563 tf_r 0.00019 ro_r 0.00041 fde 6.56 đọc 0.0093 lr 1.2e-04 2.0 it/s
+step  17700 tf_z 0.1594 ro_z 0.2598 tf_r 0.00020 ro_r 0.00041 fde 6.54 đọc 0.0092 lr 1.1e-04 2.0 it/s
+step  17800 tf_z 0.1543 ro_z 0.2582 tf_r 0.00020 ro_r 0.00040 fde 6.45 đọc 0.0093 lr 1.1e-04 2.0 it/s
+step  17900 tf_z 0.1554 ro_z 0.2572 tf_r 0.00019 ro_r 0.00043 fde 6.54 đọc 0.0092 lr 1.1e-04 2.0 it/s
+step  18000 tf_z 0.1545 ro_z 0.2573 tf_r 0.00019 ro_r 0.00047 fde 6.59 đọc 0.0092 lr 1.1e-04 2.0 it/s
+[val 18000] FDE khối T sau 16 bước: 8.55 (đoán không đổi: 33.47)
+[val 18000] MSE latent (WM | copy) k1: 0.176|0.250 k4: 0.252|0.482 k8: 0.281|0.672 k16: 0.330|0.920 | reward MAE k1 0.0123 k16 0.0212 corr 0.997
+step  18100 tf_z 0.1540 ro_z 0.2545 tf_r 0.00019 ro_r 0.00044 fde 6.26 đọc 0.0090 lr 1.1e-04 2.0 it/s
+step  18200 tf_z 0.1562 ro_z 0.2549 tf_r 0.00018 ro_r 0.00040 fde 6.40 đọc 0.0090 lr 1.1e-04 2.0 it/s
+step  18300 tf_z 0.1523 ro_z 0.2542 tf_r 0.00018 ro_r 0.00039 fde 6.37 đọc 0.0090 lr 1.1e-04 2.0 it/s
+step  18400 tf_z 0.1551 ro_z 0.2531 tf_r 0.00019 ro_r 0.00041 fde 6.06 đọc 0.0089 lr 1.0e-04 2.0 it/s
+step  18500 tf_z 0.1575 ro_z 0.2571 tf_r 0.00018 ro_r 0.00040 fde 6.31 đọc 0.0090 lr 1.0e-04 2.0 it/s
+step  18600 tf_z 0.1523 ro_z 0.2528 tf_r 0.00018 ro_r 0.00039 fde 6.21 đọc 0.0090 lr 1.0e-04 2.0 it/s
+step  18700 tf_z 0.1525 ro_z 0.2518 tf_r 0.00018 ro_r 0.00040 fde 6.25 đọc 0.0089 lr 9.9e-05 2.0 it/s
+step  18800 tf_z 0.1507 ro_z 0.2503 tf_r 0.00017 ro_r 0.00040 fde 6.16 đọc 0.0088 lr 9.8e-05 2.0 it/s
+step  18900 tf_z 0.1540 ro_z 0.2550 tf_r 0.00017 ro_r 0.00039 fde 6.32 đọc 0.0088 lr 9.6e-05 2.0 it/s
+step  19000 tf_z 0.1558 ro_z 0.2545 tf_r 0.00018 ro_r 0.00040 fde 5.91 đọc 0.0087 lr 9.4e-05 2.0 it/s
+step  19100 tf_z 0.1509 ro_z 0.2487 tf_r 0.00018 ro_r 0.00039 fde 6.06 đọc 0.0087 lr 9.3e-05 2.0 it/s
+step  19200 tf_z 0.1546 ro_z 0.2523 tf_r 0.00018 ro_r 0.00040 fde 5.80 đọc 0.0086 lr 9.1e-05 2.0 it/s
+step  19300 tf_z 0.1526 ro_z 0.2504 tf_r 0.00017 ro_r 0.00035 fde 6.08 đọc 0.0086 lr 9.0e-05 2.0 it/s
+step  19400 tf_z 0.1530 ro_z 0.2501 tf_r 0.00017 ro_r 0.00039 fde 6.00 đọc 0.0086 lr 8.8e-05 2.0 it/s
+step  19500 tf_z 0.1528 ro_z 0.2502 tf_r 0.00017 ro_r 0.00037 fde 5.97 đọc 0.0085 lr 8.7e-05 2.0 it/s
+step  19600 tf_z 0.1552 ro_z 0.2498 tf_r 0.00017 ro_r 0.00037 fde 5.78 đọc 0.0085 lr 8.6e-05 2.0 it/s
+step  19700 tf_z 0.1528 ro_z 0.2487 tf_r 0.00016 ro_r 0.00033 fde 5.77 đọc 0.0084 lr 8.4e-05 2.0 it/s
+step  19800 tf_z 0.1556 ro_z 0.2492 tf_r 0.00017 ro_r 0.00032 fde 5.58 đọc 0.0084 lr 8.3e-05 2.0 it/s
+step  19900 tf_z 0.1520 ro_z 0.2491 tf_r 0.00016 ro_r 0.00034 fde 5.75 đọc 0.0084 lr 8.1e-05 2.0 it/s
+step  20000 tf_z 0.1537 ro_z 0.2479 tf_r 0.00016 ro_r 0.00037 fde 5.72 đọc 0.0085 lr 8.0e-05 2.0 it/s
+[val 20000] FDE khối T sau 16 bước: 8.58 (đoán không đổi: 33.47)
+[val 20000] MSE latent (WM | copy) k1: 0.175|0.250 k4: 0.248|0.482 k8: 0.275|0.672 k16: 0.325|0.920 | reward MAE k1 0.0132 k16 0.0195 corr 0.997
+step  20100 tf_z 0.1517 ro_z 0.2470 tf_r 0.00016 ro_r 0.00032 fde 5.56 đọc 0.0082 lr 7.8e-05 2.0 it/s
+step  20200 tf_z 0.1542 ro_z 0.2489 tf_r 0.00016 ro_r 0.00036 fde 5.62 đọc 0.0083 lr 7.7e-05 2.0 it/s
+step  20300 tf_z 0.1542 ro_z 0.2483 tf_r 0.00016 ro_r 0.00032 fde 5.37 đọc 0.0081 lr 7.5e-05 2.0 it/s
+step  20400 tf_z 0.1518 ro_z 0.2477 tf_r 0.00016 ro_r 0.00031 fde 5.38 đọc 0.0082 lr 7.4e-05 2.0 it/s
+step  20500 tf_z 0.1512 ro_z 0.2433 tf_r 0.00016 ro_r 0.00032 fde 5.27 đọc 0.0081 lr 7.3e-05 2.0 it/s
+step  20600 tf_z 0.1527 ro_z 0.2472 tf_r 0.00016 ro_r 0.00032 fde 5.27 đọc 0.0082 lr 7.1e-05 2.0 it/s
+step  20700 tf_z 0.1496 ro_z 0.2441 tf_r 0.00016 ro_r 0.00031 fde 5.31 đọc 0.0081 lr 7.0e-05 2.0 it/s
+step  20800 tf_z 0.1539 ro_z 0.2480 tf_r 0.00015 ro_r 0.00033 fde 5.43 đọc 0.0081 lr 6.9e-05 2.0 it/s
+step  20900 tf_z 0.1514 ro_z 0.2432 tf_r 0.00015 ro_r 0.00031 fde 5.08 đọc 0.0080 lr 6.7e-05 2.0 it/s
+step  21000 tf_z 0.1504 ro_z 0.2426 tf_r 0.00016 ro_r 0.00031 fde 5.09 đọc 0.0079 lr 6.6e-05 2.0 it/s
+step  21100 tf_z 0.1521 ro_z 0.2439 tf_r 0.00016 ro_r 0.00031 fde 5.15 đọc 0.0078 lr 6.4e-05 2.0 it/s
+step  21200 tf_z 0.1523 ro_z 0.2444 tf_r 0.00015 ro_r 0.00029 fde 4.97 đọc 0.0079 lr 6.3e-05 2.0 it/s
+step  21300 tf_z 0.1526 ro_z 0.2453 tf_r 0.00015 ro_r 0.00031 fde 4.97 đọc 0.0078 lr 6.2e-05 2.0 it/s
+step  21400 tf_z 0.1509 ro_z 0.2413 tf_r 0.00015 ro_r 0.00029 fde 4.98 đọc 0.0079 lr 6.1e-05 2.0 it/s
+step  21500 tf_z 0.1518 ro_z 0.2433 tf_r 0.00015 ro_r 0.00029 fde 4.92 đọc 0.0079 lr 5.9e-05 2.0 it/s
+step  21600 tf_z 0.1553 ro_z 0.2482 tf_r 0.00016 ro_r 0.00029 fde 5.02 đọc 0.0078 lr 5.8e-05 2.0 it/s
+step  21700 tf_z 0.1524 ro_z 0.2435 tf_r 0.00015 ro_r 0.00028 fde 4.85 đọc 0.0078 lr 5.7e-05 2.0 it/s
+step  21800 tf_z 0.1505 ro_z 0.2407 tf_r 0.00015 ro_r 0.00029 fde 4.80 đọc 0.0077 lr 5.5e-05 2.0 it/s
+step  21900 tf_z 0.1484 ro_z 0.2397 tf_r 0.00015 ro_r 0.00029 fde 4.82 đọc 0.0077 lr 5.4e-05 2.0 it/s
+step  22000 tf_z 0.1530 ro_z 0.2438 tf_r 0.00015 ro_r 0.00027 fde 4.74 đọc 0.0077 lr 5.3e-05 2.0 it/s
+[val 22000] FDE khối T sau 16 bước: 7.22 (đoán không đổi: 33.47)
+[val 22000] MSE latent (WM | copy) k1: 0.174|0.250 k4: 0.245|0.482 k8: 0.271|0.672 k16: 0.320|0.920 | reward MAE k1 0.0121 k16 0.0179 corr 0.998
+step  22100 tf_z 0.1516 ro_z 0.2400 tf_r 0.00015 ro_r 0.00028 fde 4.69 đọc 0.0076 lr 5.2e-05 2.0 it/s
+step  22200 tf_z 0.1531 ro_z 0.2431 tf_r 0.00015 ro_r 0.00026 fde 4.69 đọc 0.0077 lr 5.0e-05 2.1 it/s
+step  22300 tf_z 0.1542 ro_z 0.2441 tf_r 0.00015 ro_r 0.00029 fde 4.56 đọc 0.0076 lr 4.9e-05 2.0 it/s
+step  22400 tf_z 0.1509 ro_z 0.2391 tf_r 0.00014 ro_r 0.00026 fde 4.49 đọc 0.0075 lr 4.8e-05 2.1 it/s
+step  22500 tf_z 0.1504 ro_z 0.2404 tf_r 0.00015 ro_r 0.00028 fde 4.43 đọc 0.0075 lr 4.7e-05 2.0 it/s
+step  22600 tf_z 0.1509 ro_z 0.2404 tf_r 0.00015 ro_r 0.00026 fde 4.47 đọc 0.0075 lr 4.6e-05 2.1 it/s
+step  22700 tf_z 0.1507 ro_z 0.2393 tf_r 0.00014 ro_r 0.00025 fde 4.41 đọc 0.0075 lr 4.5e-05 2.0 it/s
+step  22800 tf_z 0.1560 ro_z 0.2436 tf_r 0.00014 ro_r 0.00027 fde 4.51 đọc 0.0075 lr 4.3e-05 2.1 it/s
+step  22900 tf_z 0.1523 ro_z 0.2418 tf_r 0.00014 ro_r 0.00025 fde 4.37 đọc 0.0074 lr 4.2e-05 2.0 it/s
+step  23000 tf_z 0.1524 ro_z 0.2417 tf_r 0.00015 ro_r 0.00026 fde 4.59 đọc 0.0075 lr 4.1e-05 2.1 it/s
+step  23100 tf_z 0.1517 ro_z 0.2402 tf_r 0.00014 ro_r 0.00026 fde 4.48 đọc 0.0074 lr 4.0e-05 2.0 it/s
+step  23200 tf_z 0.1504 ro_z 0.2382 tf_r 0.00014 ro_r 0.00026 fde 4.31 đọc 0.0073 lr 3.9e-05 2.0 it/s
+step  23300 tf_z 0.1512 ro_z 0.2418 tf_r 0.00014 ro_r 0.00024 fde 4.41 đọc 0.0073 lr 3.8e-05 2.0 it/s
+step  23400 tf_z 0.1538 ro_z 0.2420 tf_r 0.00014 ro_r 0.00025 fde 4.26 đọc 0.0073 lr 3.7e-05 2.0 it/s
+step  23500 tf_z 0.1483 ro_z 0.2361 tf_r 0.00014 ro_r 0.00025 fde 4.17 đọc 0.0072 lr 3.6e-05 2.0 it/s
+step  23600 tf_z 0.1470 ro_z 0.2347 tf_r 0.00014 ro_r 0.00024 fde 4.16 đọc 0.0072 lr 3.5e-05 2.0 it/s
+step  23700 tf_z 0.1518 ro_z 0.2367 tf_r 0.00014 ro_r 0.00023 fde 4.02 đọc 0.0072 lr 3.4e-05 2.0 it/s
+step  23800 tf_z 0.1566 ro_z 0.2432 tf_r 0.00013 ro_r 0.00024 fde 4.20 đọc 0.0073 lr 3.3e-05 2.1 it/s
+step  23900 tf_z 0.1484 ro_z 0.2368 tf_r 0.00013 ro_r 0.00022 fde 4.02 đọc 0.0072 lr 3.2e-05 2.0 it/s
+step  24000 tf_z 0.1495 ro_z 0.2337 tf_r 0.00013 ro_r 0.00023 fde 3.92 đọc 0.0072 lr 3.1e-05 2.1 it/s
+[val 24000] FDE khối T sau 16 bước: 7.08 (đoán không đổi: 33.47)
+[val 24000] MSE latent (WM | copy) k1: 0.173|0.250 k4: 0.243|0.482 k8: 0.269|0.672 k16: 0.316|0.920 | reward MAE k1 0.0114 k16 0.0181 corr 0.998
+step  24100 tf_z 0.1480 ro_z 0.2347 tf_r 0.00014 ro_r 0.00024 fde 4.02 đọc 0.0072 lr 3.0e-05 2.0 it/s
+step  24200 tf_z 0.1512 ro_z 0.2393 tf_r 0.00013 ro_r 0.00024 fde 4.12 đọc 0.0072 lr 2.9e-05 2.1 it/s
+step  24300 tf_z 0.1478 ro_z 0.2351 tf_r 0.00013 ro_r 0.00022 fde 3.89 đọc 0.0071 lr 2.8e-05 2.0 it/s
+step  24400 tf_z 0.1488 ro_z 0.2357 tf_r 0.00013 ro_r 0.00022 fde 3.95 đọc 0.0071 lr 2.7e-05 2.1 it/s
+step  24500 tf_z 0.1484 ro_z 0.2359 tf_r 0.00014 ro_r 0.00023 fde 4.03 đọc 0.0072 lr 2.6e-05 2.0 it/s
+step  24600 tf_z 0.1521 ro_z 0.2390 tf_r 0.00014 ro_r 0.00025 fde 3.97 đọc 0.0070 lr 2.5e-05 2.1 it/s
+step  24700 tf_z 0.1524 ro_z 0.2374 tf_r 0.00013 ro_r 0.00023 fde 3.87 đọc 0.0070 lr 2.4e-05 2.0 it/s
+step  24800 tf_z 0.1513 ro_z 0.2372 tf_r 0.00013 ro_r 0.00022 fde 3.90 đọc 0.0070 lr 2.3e-05 2.1 it/s
+step  24900 tf_z 0.1481 ro_z 0.2346 tf_r 0.00013 ro_r 0.00022 fde 3.86 đọc 0.0070 lr 2.2e-05 2.1 it/s
+step  25000 tf_z 0.1476 ro_z 0.2329 tf_r 0.00013 ro_r 0.00022 fde 3.82 đọc 0.0070 lr 2.1e-05 2.1 it/s
+step  25100 tf_z 0.1555 ro_z 0.2392 tf_r 0.00013 ro_r 0.00024 fde 3.80 đọc 0.0070 lr 2.1e-05 2.1 it/s
+step  25200 tf_z 0.1507 ro_z 0.2362 tf_r 0.00013 ro_r 0.00025 fde 3.89 đọc 0.0070 lr 2.0e-05 2.1 it/s
+step  25300 tf_z 0.1492 ro_z 0.2351 tf_r 0.00013 ro_r 0.00022 fde 3.76 đọc 0.0069 lr 1.9e-05 2.0 it/s
+step  25400 tf_z 0.1484 ro_z 0.2327 tf_r 0.00013 ro_r 0.00022 fde 3.72 đọc 0.0070 lr 1.8e-05 2.1 it/s
+step  25500 tf_z 0.1509 ro_z 0.2358 tf_r 0.00013 ro_r 0.00022 fde 3.57 đọc 0.0069 lr 1.7e-05 2.0 it/s
+step  25600 tf_z 0.1490 ro_z 0.2353 tf_r 0.00013 ro_r 0.00021 fde 3.63 đọc 0.0068 lr 1.7e-05 2.0 it/s
+step  25700 tf_z 0.1488 ro_z 0.2347 tf_r 0.00013 ro_r 0.00021 fde 3.73 đọc 0.0069 lr 1.6e-05 2.0 it/s
+step  25800 tf_z 0.1514 ro_z 0.2385 tf_r 0.00013 ro_r 0.00023 fde 3.57 đọc 0.0069 lr 1.5e-05 2.0 it/s
+step  25900 tf_z 0.1486 ro_z 0.2328 tf_r 0.00013 ro_r 0.00021 fde 3.63 đọc 0.0068 lr 1.5e-05 2.0 it/s
+step  26000 tf_z 0.1492 ro_z 0.2337 tf_r 0.00013 ro_r 0.00021 fde 3.64 đọc 0.0069 lr 1.4e-05 2.0 it/s
+[val 26000] FDE khối T sau 16 bước: 6.58 (đoán không đổi: 33.47)
+[val 26000] MSE latent (WM | copy) k1: 0.173|0.250 k4: 0.240|0.482 k8: 0.265|0.672 k16: 0.312|0.920 | reward MAE k1 0.0114 k16 0.0174 corr 0.998
+step  26100 tf_z 0.1522 ro_z 0.2346 tf_r 0.00013 ro_r 0.00021 fde 3.65 đọc 0.0068 lr 1.3e-05 2.0 it/s
+step  26200 tf_z 0.1487 ro_z 0.2327 tf_r 0.00013 ro_r 0.00022 fde 3.59 đọc 0.0069 lr 1.3e-05 2.1 it/s
+step  26300 tf_z 0.1493 ro_z 0.2332 tf_r 0.00013 ro_r 0.00021 fde 3.57 đọc 0.0069 lr 1.2e-05 2.0 it/s
+step  26400 tf_z 0.1511 ro_z 0.2367 tf_r 0.00013 ro_r 0.00021 fde 3.50 đọc 0.0068 lr 1.1e-05 2.0 it/s
+step  26500 tf_z 0.1498 ro_z 0.2334 tf_r 0.00013 ro_r 0.00021 fde 3.52 đọc 0.0069 lr 1.1e-05 2.0 it/s
+step  26600 tf_z 0.1501 ro_z 0.2334 tf_r 0.00013 ro_r 0.00021 fde 3.40 đọc 0.0068 lr 1.0e-05 2.1 it/s
+step  26700 tf_z 0.1515 ro_z 0.2357 tf_r 0.00013 ro_r 0.00020 fde 3.39 đọc 0.0068 lr 9.5e-06 2.0 it/s
+step  26800 tf_z 0.1507 ro_z 0.2355 tf_r 0.00013 ro_r 0.00023 fde 3.49 đọc 0.0068 lr 8.9e-06 2.0 it/s
+step  26900 tf_z 0.1473 ro_z 0.2325 tf_r 0.00013 ro_r 0.00020 fde 3.43 đọc 0.0068 lr 8.4e-06 2.0 it/s
+step  27000 tf_z 0.1495 ro_z 0.2332 tf_r 0.00013 ro_r 0.00022 fde 3.44 đọc 0.0068 lr 7.9e-06 2.0 it/s
+step  27100 tf_z 0.1499 ro_z 0.2319 tf_r 0.00013 ro_r 0.00020 fde 3.40 đọc 0.0067 lr 7.3e-06 2.0 it/s
+step  27200 tf_z 0.1527 ro_z 0.2332 tf_r 0.00013 ro_r 0.00020 fde 3.29 đọc 0.0067 lr 6.8e-06 2.0 it/s
+step  27300 tf_z 0.1465 ro_z 0.2321 tf_r 0.00013 ro_r 0.00021 fde 3.39 đọc 0.0067 lr 6.4e-06 2.0 it/s
+step  27400 tf_z 0.1537 ro_z 0.2363 tf_r 0.00013 ro_r 0.00020 fde 3.38 đọc 0.0068 lr 5.9e-06 2.0 it/s
+step  27500 tf_z 0.1520 ro_z 0.2353 tf_r 0.00013 ro_r 0.00020 fde 3.45 đọc 0.0067 lr 5.5e-06 2.0 it/s
+step  27600 tf_z 0.1496 ro_z 0.2321 tf_r 0.00013 ro_r 0.00021 fde 3.41 đọc 0.0068 lr 5.0e-06 2.1 it/s
+step  27700 tf_z 0.1477 ro_z 0.2312 tf_r 0.00012 ro_r 0.00019 fde 3.27 đọc 0.0067 lr 4.6e-06 2.0 it/s
+step  27800 tf_z 0.1520 ro_z 0.2342 tf_r 0.00013 ro_r 0.00020 fde 3.34 đọc 0.0067 lr 4.2e-06 2.0 it/s
+step  27900 tf_z 0.1488 ro_z 0.2320 tf_r 0.00013 ro_r 0.00020 fde 3.25 đọc 0.0066 lr 3.9e-06 2.0 it/s
+step  28000 tf_z 0.1501 ro_z 0.2338 tf_r 0.00012 ro_r 0.00020 fde 3.33 đọc 0.0067 lr 3.5e-06 2.0 it/s
+[val 28000] FDE khối T sau 16 bước: 6.39 (đoán không đổi: 33.47)
+[val 28000] MSE latent (WM | copy) k1: 0.173|0.250 k4: 0.239|0.482 k8: 0.264|0.672 k16: 0.310|0.920 | reward MAE k1 0.0114 k16 0.0164 corr 0.998
+step  28100 tf_z 0.1489 ro_z 0.2310 tf_r 0.00013 ro_r 0.00020 fde 3.25 đọc 0.0066 lr 3.2e-06 2.0 it/s
+step  28200 tf_z 0.1475 ro_z 0.2309 tf_r 0.00013 ro_r 0.00019 fde 3.23 đọc 0.0066 lr 2.8e-06 2.0 it/s
+step  28300 tf_z 0.1477 ro_z 0.2300 tf_r 0.00013 ro_r 0.00019 fde 3.18 đọc 0.0066 lr 2.5e-06 2.0 it/s
+step  28400 tf_z 0.1485 ro_z 0.2327 tf_r 0.00012 ro_r 0.00020 fde 3.23 đọc 0.0066 lr 2.2e-06 2.0 it/s
+step  28500 tf_z 0.1489 ro_z 0.2314 tf_r 0.00013 ro_r 0.00021 fde 3.25 đọc 0.0066 lr 2.0e-06 2.0 it/s
+step  28600 tf_z 0.1479 ro_z 0.2339 tf_r 0.00013 ro_r 0.00021 fde 3.26 đọc 0.0067 lr 1.7e-06 2.0 it/s
+step  28700 tf_z 0.1495 ro_z 0.2324 tf_r 0.00012 ro_r 0.00018 fde 3.26 đọc 0.0067 lr 1.5e-06 2.0 it/s
+step  28800 tf_z 0.1483 ro_z 0.2310 tf_r 0.00012 ro_r 0.00019 fde 3.16 đọc 0.0066 lr 1.3e-06 2.0 it/s
+step  28900 tf_z 0.1509 ro_z 0.2351 tf_r 0.00013 ro_r 0.00019 fde 3.24 đọc 0.0066 lr 1.1e-06 2.0 it/s
+step  29000 tf_z 0.1487 ro_z 0.2328 tf_r 0.00012 ro_r 0.00019 fde 3.18 đọc 0.0066 lr 8.8e-07 2.0 it/s
+step  29100 tf_z 0.1480 ro_z 0.2309 tf_r 0.00012 ro_r 0.00019 fde 3.20 đọc 0.0067 lr 7.1e-07 2.0 it/s
+step  29200 tf_z 0.1452 ro_z 0.2285 tf_r 0.00012 ro_r 0.00019 fde 3.15 đọc 0.0066 lr 5.6e-07 2.0 it/s
+step  29300 tf_z 0.1471 ro_z 0.2309 tf_r 0.00012 ro_r 0.00019 fde 3.12 đọc 0.0066 lr 4.3e-07 2.0 it/s
+step  29400 tf_z 0.1521 ro_z 0.2347 tf_r 0.00012 ro_r 0.00019 fde 3.17 đọc 0.0067 lr 3.2e-07 2.0 it/s
+step  29500 tf_z 0.1499 ro_z 0.2341 tf_r 0.00013 ro_r 0.00019 fde 3.24 đọc 0.0066 lr 2.2e-07 2.0 it/s
+step  29600 tf_z 0.1498 ro_z 0.2314 tf_r 0.00012 ro_r 0.00022 fde 3.23 đọc 0.0067 lr 1.4e-07 2.0 it/s
+step  29700 tf_z 0.1529 ro_z 0.2357 tf_r 0.00012 ro_r 0.00021 fde 3.28 đọc 0.0068 lr 7.9e-08 2.0 it/s
+step  29800 tf_z 0.1455 ro_z 0.2291 tf_r 0.00012 ro_r 0.00019 fde 3.19 đọc 0.0066 lr 3.5e-08 2.0 it/s
+step  29900 tf_z 0.1512 ro_z 0.2343 tf_r 0.00013 ro_r 0.00019 fde 3.18 đọc 0.0066 lr 8.8e-09 2.0 it/s
+step  30000 tf_z 0.1480 ro_z 0.2305 tf_r 0.00012 ro_r 0.00019 fde 3.19 đọc 0.0066 lr 0.0e+00 2.0 it/s
+[val 30000] FDE khối T sau 16 bước: 6.28 (đoán không đổi: 33.47)
+[val 30000] MSE latent (WM | copy) k1: 0.173|0.250 k4: 0.239|0.482 k8: 0.264|0.672 k16: 0.310|0.920 | reward MAE k1 0.0112 k16 0.0162 corr 0.998
+xong. điểm val tốt nhất (FDE khối T sau 16 bước, hoặc MSE latent nếu không có tư thế) = 6.2803
+world model bước 30000 | test sim_v2: 53827 cửa sổ, nhìn trước 16 bước
+sàn đầu đọc (đọc tư thế trên latent thật): vị trí TB 2.73 | góc trung vị 0.57°
+
+### World model ẢNH (outputs/loop/r2/wm/wm_best.pt) trên sim_v2
+  k |  vị trí TB (dự đoán / không đổi) |   góc trung vị ° || LÚC BỊ ĐẨY: vị trí (dự đoán / không đổi) | giảm sai số | cos hướng | n đẩy
+  1 |          2.56 /          1.36    |   0.62 /   0.00    ||     2.86 /     3.91            |       26.9% |     0.941 | 17497
+  4 |          2.61 /          5.42    |   0.67 /   0.06    ||     2.96 /    11.84            |       75.0% |     0.994 | 24402
+  8 |          2.72 /         10.77    |   0.69 /   0.83    ||     3.11 /    19.18            |       83.8% |     0.997 | 30084
+ 16 |          3.23 /         21.25    |   0.75 /   3.41    ||     3.61 /    28.50            |       87.3% |     0.998 | 40044

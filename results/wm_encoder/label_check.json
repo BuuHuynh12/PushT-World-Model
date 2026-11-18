@@ -1,9 +1,0 @@
-{
- "sim_pos_err_mean": 0.2430131390746857,
- "sim_ang_err_median": 0.0965544362606876,
- "iou_sim_true": 0.1458351289231472,
- "iou_sim_pred": 0.1458351289231472,
- "iou_demo_label": 0.09498259496130318,
- "iou_demo_label_p10": 0.0,
- "iou_sim_pred_p10": 0.005835442559782403
-}

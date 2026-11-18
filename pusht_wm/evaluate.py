@@ -32,11 +32,11 @@ def _act_fn_from_policy(policy, num_inference_steps=None, seed: int = 0):
 @torch.no_grad()
 def evaluate(policy=None, act_fn=None, seeds=EVAL_SEEDS, max_steps: int = 300, n_obs: int = 2,
              num_inference_steps=None, n_video: int = 0, sample_seed: int = 0, init_states=None) -> dict:
-    """policy: DiffusionPolicy (ở chế độ eval), hoặc act_fn tùy ý (dùng cho bước 8 sau này).
+    """policy: có .act(...) (ở chế độ eval), hoặc act_fn tùy ý.
 
     act_fn(images [B,n_obs,96,96,3] uint8, states [B,n_obs,2]) -> actions [B, k, 2] (đơn vị sim).
     init_states: None (vị trí ban đầu chuẩn của gym-pusht theo seed) hoặc list [agent x, y, khối x, y, góc] cho từng seed
-    (vd vị trí sát tường từ pusht_wm.wall_starts).
+    (vị trí đặt sẵn).
     """
     if act_fn is None:
         was_training = policy.training

@@ -1,0 +1,36 @@
+# World model ẢNH: frame -> DINOv2 (đóng băng) + PCA -> latent s_t -> transformer dự đoán latent tương lai.
+# Loss = MSE latent (teacher forcing + rollout) + coverage + FDE (tư thế khối T đọc từ latent dự đoán ở bước cuối).
+seed: 42
+encoder: dinov2               # latent đã cache ở data/latents/<encoder>/<tập>.npy (scripts/cache_latents.py)
+datasets: [demo, sim_v1, self_r1, self_r2]   # demo = lerobot/pusht (không có tư thế khối T -> không góp vào FDE);
+                              # self_r* = dữ liệu tự chơi của vòng lặp (vòng 0 chỉ có demo, sim_v1)
+val_ratio: 0.05
+out_dir: outputs/loop/r2/wm
+pool: 0                       # 0 = giữ 8x8 = 64 token mỗi frame (4 = gộp 4x4 = 16 token: nhanh ~2 lần, kém hơn)
+
+model:                        # WMConfig; P, D tự lấy theo latent
+  d_model: 256
+  n_layers: 6
+  n_heads: 4
+  window: 4
+  dropout: 0.0
+  pose_head: true             # đầu đọc tư thế train chung -> cần cho loss FDE và để chấm path
+
+train:
+  steps: 30000
+  batch_size: 64
+  lr: 3.0e-4
+  weight_decay: 0.01
+  warmup_steps: 1000
+  n_ctx: 2                    # số frame thật làm ngữ cảnh khi rollout
+  n_roll: 16                  # số bước rollout khi train (= tầm dự đoán khi chọn path)
+  w_reward: 10.0
+  w_fde: 1.0                  # trọng số FDE (đơn vị sim / 256)
+  w_pose: 1.0                 # trọng số đọc tư thế trên latent THẬT
+  fde_r: 60.0                 # FDE = sqrt(dx^2 + dy^2) + fde_r * |dθ| (rad)
+  amp: bf16                   # bf16 (GPU Ampere trở lên) | none
+  grad_clip: 1.0
+  log_every: 100
+  val_every: 2000
+  val_windows: 512
+  eval_horizon: 16

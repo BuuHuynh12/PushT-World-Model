@@ -1,0 +1,165 @@
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 11393.26it/s]
+/root/pusht/scripts/train_latent_path.py:76: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:208.)
+  z = torch.from_numpy(pool_tokens(np.asarray(lat), scorer.pool))
+demo: 206/206 episode, 25650 mẫu
+sim_v2: 238/9848 episode, 40327 mẫu
+self_r1: 809/1000 episode, 136755 mẫu
+self_r2: 897/1000 episode, 136025 mẫu
+s_t = both: 64 token x 384 | 338757 mẫu | tham số train 69.3M
+step    200 loss 0.3651 lr 8.0e-05 4.3 it/s
+step    400 loss 0.0547 lr 1.6e-04 4.5 it/s
+step    600 loss 0.0407 lr 2.0e-04 4.5 it/s
+step    800 loss 0.0321 lr 2.0e-04 4.5 it/s
+step   1000 loss 0.0270 lr 2.0e-04 4.5 it/s
+step   1200 loss 0.0243 lr 2.0e-04 4.5 it/s
+step   1400 loss 0.0225 lr 2.0e-04 4.5 it/s
+step   1600 loss 0.0218 lr 2.0e-04 4.5 it/s
+step   1800 loss 0.0206 lr 2.0e-04 4.5 it/s
+step   2000 loss 0.0197 lr 2.0e-04 4.5 it/s
+step   2200 loss 0.0190 lr 2.0e-04 4.5 it/s
+step   2400 loss 0.0183 lr 2.0e-04 4.5 it/s
+step   2600 loss 0.0182 lr 2.0e-04 4.5 it/s
+step   2800 loss 0.0178 lr 2.0e-04 4.5 it/s
+step   3000 loss 0.0175 lr 2.0e-04 4.5 it/s
+step   3200 loss 0.0167 lr 2.0e-04 4.5 it/s
+step   3400 loss 0.0168 lr 2.0e-04 4.5 it/s
+step   3600 loss 0.0165 lr 1.9e-04 4.5 it/s
+step   3800 loss 0.0161 lr 1.9e-04 4.5 it/s
+step   4000 loss 0.0157 lr 1.9e-04 4.5 it/s
+step   4200 loss 0.0156 lr 1.9e-04 4.5 it/s
+step   4400 loss 0.0156 lr 1.9e-04 4.5 it/s
+step   4600 loss 0.0151 lr 1.9e-04 4.5 it/s
+step   4800 loss 0.0151 lr 1.9e-04 4.5 it/s
+step   5000 loss 0.0149 lr 1.9e-04 4.5 it/s
+[eval 5000] success 0.680 | thời gian (trung vị) 226.0 | max_cov 0.939 (43s)
+step   5200 loss 0.0147 lr 1.9e-04 4.5 it/s
+step   5400 loss 0.0145 lr 1.9e-04 4.5 it/s
+step   5600 loss 0.0147 lr 1.9e-04 4.5 it/s
+step   5800 loss 0.0140 lr 1.8e-04 4.5 it/s
+step   6000 loss 0.0142 lr 1.8e-04 4.5 it/s
+step   6200 loss 0.0140 lr 1.8e-04 4.5 it/s
+step   6400 loss 0.0140 lr 1.8e-04 4.5 it/s
+step   6600 loss 0.0139 lr 1.8e-04 4.5 it/s
+step   6800 loss 0.0139 lr 1.8e-04 4.5 it/s
+step   7000 loss 0.0137 lr 1.8e-04 4.5 it/s
+step   7200 loss 0.0135 lr 1.8e-04 4.5 it/s
+step   7400 loss 0.0130 lr 1.7e-04 4.5 it/s
+step   7600 loss 0.0134 lr 1.7e-04 4.5 it/s
+step   7800 loss 0.0125 lr 1.7e-04 4.5 it/s
+step   8000 loss 0.0131 lr 1.7e-04 4.5 it/s
+step   8200 loss 0.0129 lr 1.7e-04 4.5 it/s
+step   8400 loss 0.0126 lr 1.7e-04 4.5 it/s
+step   8600 loss 0.0128 lr 1.7e-04 4.5 it/s
+step   8800 loss 0.0126 lr 1.6e-04 4.5 it/s
+step   9000 loss 0.0126 lr 1.6e-04 4.5 it/s
+step   9200 loss 0.0124 lr 1.6e-04 4.5 it/s
+step   9400 loss 0.0123 lr 1.6e-04 4.5 it/s
+step   9600 loss 0.0124 lr 1.6e-04 4.5 it/s
+step   9800 loss 0.0120 lr 1.5e-04 4.5 it/s
+step  10000 loss 0.0121 lr 1.5e-04 4.5 it/s
+[eval 10000] success 0.800 | thời gian (trung vị) 189.5 | max_cov 0.935 (31s)
+step  10200 loss 0.0119 lr 1.5e-04 4.5 it/s
+step  10400 loss 0.0120 lr 1.5e-04 4.5 it/s
+step  10600 loss 0.0118 lr 1.5e-04 4.5 it/s
+step  10800 loss 0.0116 lr 1.5e-04 4.5 it/s
+step  11000 loss 0.0114 lr 1.4e-04 4.5 it/s
+step  11200 loss 0.0115 lr 1.4e-04 4.5 it/s
+step  11400 loss 0.0112 lr 1.4e-04 4.5 it/s
+step  11600 loss 0.0111 lr 1.4e-04 4.5 it/s
+step  11800 loss 0.0111 lr 1.4e-04 4.5 it/s
+step  12000 loss 0.0111 lr 1.3e-04 4.5 it/s
+step  12200 loss 0.0108 lr 1.3e-04 4.5 it/s
+step  12400 loss 0.0108 lr 1.3e-04 4.5 it/s
+step  12600 loss 0.0108 lr 1.3e-04 4.5 it/s
+step  12800 loss 0.0107 lr 1.3e-04 4.5 it/s
+step  13000 loss 0.0108 lr 1.2e-04 4.5 it/s
+step  13200 loss 0.0105 lr 1.2e-04 4.5 it/s
+step  13400 loss 0.0104 lr 1.2e-04 4.5 it/s
+step  13600 loss 0.0105 lr 1.2e-04 4.5 it/s
+step  13800 loss 0.0104 lr 1.2e-04 4.5 it/s
+step  14000 loss 0.0105 lr 1.1e-04 4.5 it/s
+step  14200 loss 0.0103 lr 1.1e-04 4.5 it/s
+step  14400 loss 0.0101 lr 1.1e-04 4.5 it/s
+step  14600 loss 0.0100 lr 1.1e-04 4.5 it/s
+step  14800 loss 0.0100 lr 1.0e-04 4.5 it/s
+step  15000 loss 0.0100 lr 1.0e-04 4.5 it/s
+[eval 15000] success 0.900 | thời gian (trung vị) 197.0 | max_cov 0.928 (31s)
+step  15200 loss 0.0099 lr 1.0e-04 4.5 it/s
+step  15400 loss 0.0100 lr 9.8e-05 4.5 it/s
+step  15600 loss 0.0094 lr 9.6e-05 4.5 it/s
+step  15800 loss 0.0096 lr 9.4e-05 4.5 it/s
+step  16000 loss 0.0095 lr 9.2e-05 4.5 it/s
+step  16200 loss 0.0094 lr 9.0e-05 4.5 it/s
+step  16400 loss 0.0094 lr 8.8e-05 4.5 it/s
+step  16600 loss 0.0092 lr 8.6e-05 4.5 it/s
+step  16800 loss 0.0094 lr 8.4e-05 4.5 it/s
+step  17000 loss 0.0090 lr 8.1e-05 4.5 it/s
+step  17200 loss 0.0090 lr 7.9e-05 4.5 it/s
+step  17400 loss 0.0092 lr 7.7e-05 4.5 it/s
+step  17600 loss 0.0092 lr 7.5e-05 4.5 it/s
+step  17800 loss 0.0087 lr 7.3e-05 4.5 it/s
+step  18000 loss 0.0088 lr 7.1e-05 4.5 it/s
+step  18200 loss 0.0089 lr 6.9e-05 4.5 it/s
+step  18400 loss 0.0086 lr 6.7e-05 4.5 it/s
+step  18600 loss 0.0085 lr 6.5e-05 4.5 it/s
+step  18800 loss 0.0086 lr 6.3e-05 4.5 it/s
+step  19000 loss 0.0084 lr 6.1e-05 4.5 it/s
+step  19200 loss 0.0085 lr 5.9e-05 4.5 it/s
+step  19400 loss 0.0084 lr 5.7e-05 4.5 it/s
+step  19600 loss 0.0083 lr 5.5e-05 4.5 it/s
+step  19800 loss 0.0083 lr 5.3e-05 4.5 it/s
+step  20000 loss 0.0082 lr 5.2e-05 4.5 it/s
+[eval 20000] success 0.880 | thời gian (trung vị) 182.5 | max_cov 0.936 (27s)
+step  20200 loss 0.0082 lr 5.0e-05 4.5 it/s
+step  20400 loss 0.0080 lr 4.8e-05 4.5 it/s
+step  20600 loss 0.0080 lr 4.6e-05 4.5 it/s
+step  20800 loss 0.0081 lr 4.4e-05 4.5 it/s
+step  21000 loss 0.0079 lr 4.3e-05 4.5 it/s
+step  21200 loss 0.0079 lr 4.1e-05 4.5 it/s
+step  21400 loss 0.0077 lr 3.9e-05 4.5 it/s
+step  21600 loss 0.0077 lr 3.7e-05 4.5 it/s
+step  21800 loss 0.0077 lr 3.6e-05 4.5 it/s
+step  22000 loss 0.0076 lr 3.4e-05 4.5 it/s
+step  22200 loss 0.0077 lr 3.3e-05 4.5 it/s
+step  22400 loss 0.0075 lr 3.1e-05 4.5 it/s
+step  22600 loss 0.0075 lr 2.9e-05 4.5 it/s
+step  22800 loss 0.0074 lr 2.8e-05 4.5 it/s
+step  23000 loss 0.0072 lr 2.7e-05 4.5 it/s
+step  23200 loss 0.0073 lr 2.5e-05 4.5 it/s
+step  23400 loss 0.0073 lr 2.4e-05 4.5 it/s
+step  23600 loss 0.0073 lr 2.2e-05 4.5 it/s
+step  23800 loss 0.0072 lr 2.1e-05 4.5 it/s
+step  24000 loss 0.0072 lr 2.0e-05 4.5 it/s
+step  24200 loss 0.0071 lr 1.8e-05 4.5 it/s
+step  24400 loss 0.0071 lr 1.7e-05 4.5 it/s
+step  24600 loss 0.0071 lr 1.6e-05 4.5 it/s
+step  24800 loss 0.0070 lr 1.5e-05 4.5 it/s
+step  25000 loss 0.0070 lr 1.4e-05 4.5 it/s
+[eval 25000] success 0.840 | thời gian (trung vị) 150.0 | max_cov 0.952 (23s)
+step  25200 loss 0.0069 lr 1.3e-05 4.5 it/s
+step  25400 loss 0.0069 lr 1.2e-05 4.5 it/s
+step  25600 loss 0.0067 lr 1.1e-05 4.5 it/s
+step  25800 loss 0.0066 lr 9.8e-06 4.5 it/s
+step  26000 loss 0.0068 lr 8.9e-06 4.5 it/s
+step  26200 loss 0.0068 lr 8.1e-06 4.5 it/s
+step  26400 loss 0.0067 lr 7.3e-06 4.5 it/s
+step  26600 loss 0.0067 lr 6.5e-06 4.5 it/s
+step  26800 loss 0.0067 lr 5.8e-06 4.5 it/s
+step  27000 loss 0.0066 lr 5.1e-06 4.5 it/s
+step  27200 loss 0.0067 lr 4.4e-06 4.5 it/s
+step  27400 loss 0.0066 lr 3.8e-06 4.5 it/s
+step  27600 loss 0.0065 lr 3.2e-06 4.5 it/s
+step  27800 loss 0.0065 lr 2.7e-06 4.5 it/s
+step  28000 loss 0.0065 lr 2.3e-06 4.5 it/s
+step  28200 loss 0.0066 lr 1.8e-06 4.5 it/s
+step  28400 loss 0.0065 lr 1.4e-06 4.5 it/s
+step  28600 loss 0.0065 lr 1.1e-06 4.5 it/s
+step  28800 loss 0.0066 lr 8.2e-07 4.5 it/s
+step  29000 loss 0.0065 lr 5.7e-07 4.5 it/s
+step  29200 loss 0.0065 lr 3.6e-07 4.5 it/s
+step  29400 loss 0.0066 lr 2.0e-07 4.5 it/s
+step  29600 loss 0.0064 lr 9.1e-08 4.5 it/s
+step  29800 loss 0.0065 lr 2.3e-08 4.5 it/s
+step  30000 loss 0.0065 lr 0.0e+00 4.5 it/s
+[eval 30000] success 0.800 | thời gian (trung vị) 172.0 | max_cov 0.914 (25s)
+xong. success tốt nhất (50 seed chọn checkpoint) = 0.900

@@ -1,4 +1,4 @@
-"""Bước 4: thu thập thêm dữ liệu trong sim cho world model.
+"""thu thập thêm dữ liệu trong sim cho world model.
 
 Mỗi episode được gán 1 chế độ (theo seed, tái lập được):
   clean   : policy baseline nguyên bản (nhiễu sample khác nhau giữa các env)
