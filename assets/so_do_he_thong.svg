@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1100" height="610" viewBox="0 0 1100 610" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111">
+  <defs>
+    <style>text { fill: #111; stroke: none; }</style>
+    <marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="610" fill="#fff"/>
+  <g stroke="#111" stroke-width="1.2" fill="#fff">
+
+  <!-- ======================= (a) ======================= -->
+  <text x="20" y="32" stroke="none"><tspan font-weight="bold">(a)</tspan> Inference</text>
+
+  <!-- quan sát: 2 frame thật -->
+  <image x="34" y="66" width="62" height="62" xlink:href="data:image/png;base64,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"/>
+  <rect x="34" y="66" width="62" height="62" fill="none"/>
+  <image x="46" y="78" width="62" height="62" xlink:href="data:image/png;base64,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"/>
+  <rect x="46" y="78" width="62" height="62" fill="none"/>
+  <text x="71" y="162" text-anchor="middle" stroke="none">o<tspan baseline-shift="sub" font-size="10">t−1</tspan>, o<tspan baseline-shift="sub" font-size="10">t</tspan></text>
+
+  <!-- World Model (nhóm nét đứt) -->
+  <rect x="138" y="58" width="330" height="200" fill="none" stroke-dasharray="6 4"/>
+  <text x="148" y="76" font-size="13" font-style="italic" stroke="none">World Model</text>
+
+  <rect x="155" y="92" width="120" height="50"/>
+  <text x="215" y="114" text-anchor="middle" stroke="none">DINOv2</text>
+  <text x="215" y="132" text-anchor="middle" font-size="12" stroke="none">+ PCA</text>
+
+  <rect x="330" y="92" width="120" height="50"/>
+  <text x="390" y="122" text-anchor="middle" stroke="none">Transformer</text>
+
+  <rect x="155" y="196" width="120" height="44"/>
+  <text x="215" y="223" text-anchor="middle" stroke="none">PoseHead</text>
+
+  <!-- Diffusion -->
+  <rect x="520" y="92" width="130" height="50"/>
+  <text x="585" y="114" text-anchor="middle" stroke="none">Diffusion</text>
+  <text x="585" y="132" text-anchor="middle" font-size="12" stroke="none">U-Net 1D</text>
+
+  <!-- chùm quỹ đạo -->
+  <rect x="694" y="72" width="110" height="88" fill="none" stroke="#999" stroke-width="0.8"/>
+  <g stroke-linecap="round">
+    <polyline points="704.0,150.0 714.5,149.8 724.9,148.1 735.1,145.0 744.9,140.4 754.2,134.5 762.7,127.2 770.5,118.7 777.3,109.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 714.4,148.8 724.9,147.5 735.3,146.3 745.7,145.0 756.1,143.8 766.6,142.5 777.0,141.3 787.4,140.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 714.3,147.7 724.8,146.9 735.4,147.6 746.0,149.7 756.4,153.3 766.4,158.3 776.0,164.8 784.9,172.6" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 713.3,145.0 722.2,139.5 730.7,133.2 738.8,126.4 746.4,119.0 753.5,111.1 760.2,102.6 766.2,93.6" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 712.7,144.2 721.8,138.9 731.3,134.3 741.2,130.4 751.3,127.2 761.7,124.6 772.3,122.7 783.1,121.6" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 710.8,142.0 716.5,133.1 720.9,123.4 724.0,113.1 725.7,102.2 726.0,91.0 724.8,79.5 722.1,68.0" fill="none" stroke="#111" stroke-width="1.8"/>
+    <polyline points="704.0,150.0 710.0,141.4 716.0,132.8 722.0,124.2 728.0,115.5 734.0,106.9 740.0,98.3 746.0,89.7 752.0,81.1" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 709.1,140.8 715.5,132.4 723.1,124.9 731.7,118.4 741.3,113.0 751.7,108.9 762.9,106.0 774.7,104.6" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+    <polyline points="704.0,150.0 706.5,139.8 708.2,129.4 709.2,118.9 709.5,108.4 709.0,97.7 707.8,87.1 705.9,76.5 703.2,66.0" fill="none" stroke="#9a9a9a" stroke-width="1"/>
+  </g>
+  <circle cx="704" cy="150" r="3.5" fill="#111"/>
+  <text x="749" y="180" text-anchor="middle" stroke="none">τ<tspan baseline-shift="sub" font-size="10">1</tspan> … τ<tspan baseline-shift="sub" font-size="10">16</tspan></text>
+
+  <!-- PD nghịch -->
+  <rect x="860" y="92" width="120" height="50"/>
+  <text x="920" y="114" text-anchor="middle" stroke="none">PD<tspan baseline-shift="super" font-size="10">−1</tspan></text>
+  <text x="920" y="132" text-anchor="middle" font-size="12" stroke="none">closed-form</text>
+
+  <!-- chọn + môi trường -->
+  <rect x="155" y="296" width="120" height="44"/>
+  <text x="215" y="323" text-anchor="middle" stroke="none">argmin C</text>
+
+  <rect x="20" y="296" width="102" height="44"/>
+  <text x="71" y="323" text-anchor="middle" stroke="none">gym-pusht</text>
+
+  <!-- mũi tên -->
+  <path d="M108,117 H153" fill="none" marker-end="url(#a)"/>
+  <path d="M275,117 H328" fill="none" marker-end="url(#a)"/>
+  <text x="312" y="136" text-anchor="middle" stroke="none">s<tspan baseline-shift="sub" font-size="10">t</tspan></text>
+  <path d="M300,117 V40 H585 V90" fill="none" marker-end="url(#a)"/>
+  <circle cx="300" cy="117" r="2.5" fill="#111"/>
+  <text x="440" y="34" text-anchor="middle" stroke="none">s<tspan baseline-shift="sub" font-size="10">t</tspan>, p<tspan baseline-shift="sub" font-size="10">t</tspan></text>
+  <path d="M450,117 H518" fill="none" marker-end="url(#a)"/>
+  <text x="484" y="110" text-anchor="middle" stroke="none">h<tspan baseline-shift="sub" font-size="10">t</tspan></text>
+  <path d="M650,117 H692" fill="none" marker-end="url(#a)"/>
+  <path d="M804,117 H858" fill="none" marker-end="url(#a)"/>
+
+  <!-- action quay về Transformer để rollout -->
+  <path d="M920,142 V286 H420 V144" fill="none" marker-end="url(#a)"/>
+  <text x="670" y="277" text-anchor="middle" stroke="none">a<tspan baseline-shift="sub" font-size="10">1</tspan> … a<tspan baseline-shift="sub" font-size="10">16</tspan>  (16-step rollout)</text>
+
+  <path d="M360,142 V218 H277" fill="none" marker-end="url(#a)"/>
+  <text x="318" y="210" text-anchor="middle" stroke="none">ŝ</text>
+  <path d="M215,240 V294" fill="none" marker-end="url(#a)"/>
+  <text x="230" y="272" stroke="none">b̂, ĉ</text>
+  <path d="M155,318 H124" fill="none" marker-end="url(#a)"/>
+  <text x="139" y="310" text-anchor="middle" font-size="13" stroke="none">a*</text>
+  <path d="M71,296 V170" fill="none" marker-end="url(#a)" stroke-dasharray="none"/>
+  <text x="78" y="246" stroke="none">o<tspan baseline-shift="sub" font-size="10">t+8</tspan></text>
+
+  <!-- ======================= (b) ======================= -->
+  <text x="20" y="400" stroke="none"><tspan font-weight="bold">(b)</tspan> Training</text>
+
+  <rect x="40"  y="420" width="140" height="48"/>
+  <text x="110" y="449" text-anchor="middle" stroke="none">Load data</text>
+  <rect x="220" y="420" width="140" height="48"/>
+  <text x="290" y="440" text-anchor="middle" stroke="none">Setup</text>
+  <text x="290" y="457" text-anchor="middle" stroke="none">simulation</text>
+  <rect x="400" y="420" width="140" height="48"/>
+  <text x="470" y="440" text-anchor="middle" stroke="none">Train</text>
+  <text x="470" y="457" text-anchor="middle" stroke="none">World Model</text>
+  <rect x="580" y="420" width="140" height="48"/>
+  <text x="650" y="440" text-anchor="middle" stroke="none">Train</text>
+  <text x="650" y="457" text-anchor="middle" stroke="none">Diffusion</text>
+  <rect x="760" y="420" width="140" height="48"/>
+  <text x="830" y="449" text-anchor="middle" stroke="none">Evaluate</text>
+  <rect x="940" y="420" width="140" height="48"/>
+  <text x="1010" y="449" text-anchor="middle" stroke="none">Self-play</text>
+
+  <path d="M180,444 H218" fill="none" marker-end="url(#a)"/>
+  <path d="M360,444 H398" fill="none" marker-end="url(#a)"/>
+  <path d="M540,444 H578" fill="none" marker-end="url(#a)"/>
+  <path d="M720,444 H758" fill="none" marker-end="url(#a)"/>
+  <path d="M900,444 H938" fill="none" marker-end="url(#a)"/>
+  <path d="M1010,468 V500 H470 V470" fill="none" marker-end="url(#a)"/>
+  <text x="740" y="518" text-anchor="middle" stroke="none">D<tspan baseline-shift="sub" font-size="10">self</tspan> → retrain World Model</text>
+
+  <text x="40" y="562" stroke="none">World Model loss = MSE latent (1-step + 16-step) + 10·MSE coverage + L1 pose + FDE / 256,     FDE = √(Δx² + Δy²) + 60·|Δθ|</text>
+  <text x="40" y="590" stroke="none">Diffusion loss = E ‖ ε − ε<tspan baseline-shift="sub" font-size="10">θ</tspan>(τ<tspan baseline-shift="super" font-size="10">k</tspan>, k | s<tspan baseline-shift="sub" font-size="10">t</tspan>, h<tspan baseline-shift="sub" font-size="10">t</tspan>, p<tspan baseline-shift="sub" font-size="10">t</tspan>) ‖²</text>
+  </g>
+</svg>
