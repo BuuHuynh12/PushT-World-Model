@@ -8,6 +8,13 @@ chọn đường tốt nhất; đường đi được đổi ra lệnh điều k
 > Đề bài: *xây dựng World Model — từ trạng thái hiện tại và hành động của robot, dự đoán sự thay đổi vị trí vật thể.*
 > Dữ liệu `lerobot/pusht`; tham khảo Diffusion Policy (Chi et al., 2023).
 
+<p align="center">
+  <img src="assets/demo_xa_dich.gif" width="760" alt="App: mô hình đưa khối T từ xa về đích, vừa đẩy vừa xoay 135°"><br>
+  <em>Khối T ở xa đích 247 đv và lệch 135°: mô hình đẩy và xoay về đích sau 191 bước (xem nhanh ×2). Mỗi 0.8 s Diffusion
+  đề xuất 16 đường đi cho robot (xám); world model tưởng tượng hậu quả và chọn đường tốt nhất (xanh lá đậm = 8 bước sẽ làm);
+  khối T <b>xanh lá</b> = nơi world model tưởng tượng khối T sẽ tới sau 1.6 s.</em>
+</p>
+
 ```
 frame ─► WM: DINOv2 + transformer ─► s_t latent ─► Diffusion ─► 16 path robot ─► WM tưởng tượng, chọn path ─► toán ─► action
           (đóng băng khi train Diffusion)
@@ -23,6 +30,25 @@ frame ─► WM: DINOv2 + transformer ─► s_t latent ─► Diffusion ─► 
 
 Bàn 512 × 512 đv, khối T dài 120 đv; 10 bước = 1 giây. World model chọn path giúp rõ rệt: so cặp từng màn, 16 path thắng
 60 màn mà 1 path thua, ngược lại 24 màn (sign test p = 0.0001).
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/demo_xoay_180.gif" width="400" alt="Xoay khối T 180 độ"></td>
+    <td align="center"><img src="assets/demo_grid.gif" width="300" alt="4 màn trong tập test"></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Khối T ngược 180° so với đích: xoay lại và chốt sau 173 bước.</em></td>
+    <td align="center"><em>4 màn trong tập test (seed 600111, 600149, 600252, 600128).</em></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/demo_nhanh.gif" width="400" alt="Một màn gọn"></td>
+    <td align="center"><img src="assets/demo_thua_sat_dich.gif" width="300" alt="Một màn thua sát đích"></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Màn gọn: 51 bước (5.1 s).</em></td>
+    <td align="center"><em>Kiểu thua phổ biến nhất: khối T sát đích (coverage 0.94) nhưng không chốt được 95% trong 300 bước.</em></td>
+  </tr>
+</table>
 
 ## Mô hình
 
@@ -119,7 +145,8 @@ python -m venv .venv
 
 Trong app: kéo chuột trái để đặt khối T, chuột phải đặt chấm tròn, Q/E xoay, R vị trí ngẫu nhiên, SPACE chạy;
 V bật/tắt vẽ suy nghĩ (16 đường đi + khối T world model tưởng tượng), P dừng sau mỗi lần nghĩ (N đi tiếp),
-F chạy nhanh, G quay GIF. Lần chạy đầu tự tải DINOv2 (~90 MB) từ Hugging Face. Không có GPU vẫn chạy được (chậm hơn).
+F chạy nhanh, G quay GIF. Tự quay GIF một màn theo seed:
+`APP_DEMO="600447:assets/x.gif" python app_pusht.py`. Lần chạy đầu tự tải DINOv2 (~90 MB) từ Hugging Face. Không có GPU vẫn chạy được (chậm hơn).
 
 Đánh giá (cần GPU): `python scripts/eval_latent_path.py` (500 màn test) · `python scripts/eval_wm_object.py`
 (world model trên sim_v2) · `python scripts/check_path_math.py` (công thức path → action).
@@ -130,6 +157,7 @@ Train lại toàn bộ: `bash scripts/run_loop.sh` trên máy GPU Linux (RTX 309
 
 ```
 app_pusht.py            app xem mô hình đẩy khối T và "suy nghĩ" của nó
+assets/                 ảnh động cho README (quay bằng app: phím G hoặc APP_DEMO)
 models/                 wm.pt (world model + PCA), diffusion_path.pt (Diffusion, Git LFS)
 pusht_wm/
   encoders.py           DINOv2 + PCA: ảnh -> token

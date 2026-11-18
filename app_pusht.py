@@ -14,6 +14,7 @@ Mô hình: frame -> WM -> s_t latent -> Diffusion sinh 16 PATH robot -> WM tư�
   P                        : bật/tắt TẠM DỪNG sau mỗi lần suy nghĩ (bấm N để làm tiếp) -> xem kỹ từng lần
   F                        : bật/tắt chạy nhanh (không giới hạn 10 bước/giây)
   ESC                      : thoát
+Tự quay GIF một màn (không cần bấm phím): APP_DEMO="<seed>:<file.gif>[:<số bước tối đa>]" python app_pusht.py
 Vùng xanh lá = đích. Không giới hạn số bước: chạy tới khi thành công (coverage > 95%) hoặc bấm SPACE để dừng.
 """
 import os
@@ -95,7 +96,7 @@ def main():
     pygame.display.set_caption("Push-T · World Model + Diffusion Policy")
 
     def F(size, bold=False):
-        return pygame.font.SysFont("segoeui,arial", size, bold=bold)
+        return pygame.font.SysFont("segoeui,arial,notosans,dejavusans", size, bold=bold)
     f_title, f_sub = F(24, True), F(14)
     f_card, f_body, f_small, f_big = F(13, True), F(15), F(13), F(30, True)
     f_key = F(12, True)
@@ -132,12 +133,12 @@ def main():
         im = Image.fromarray(a)
         rec.append(im.resize((int(im.width * 0.62), int(im.height * 0.62)), Image.LANCZOS))
 
-    def save_gif():
+    def save_gif(path=None):
         """Lưu GIF (xem nhanh x2: chụp 1 khung / 2 bước, phát 10 khung/giây)."""
         import time
         from PIL import Image
         Path("assets").mkdir(exist_ok=True)
-        path = Path("assets") / time.strftime("app_%Y%m%d_%H%M%S.gif")
+        path = Path(path) if path else Path("assets") / time.strftime("app_%Y%m%d_%H%M%S.gif")
         fr = [f.convert("P", palette=Image.ADAPTIVE, colors=128) for f in rec]
         fr[0].save(path, save_all=True, append_images=fr[1:], duration=100, loop=0, optimize=True)
         return path
@@ -464,6 +465,29 @@ def main():
 
     place()
     status = "Đặt vị trí rồi bấm SPACE"
+    # Chế độ tự quay GIF (không cần bấm phím): APP_DEMO="<seed>:<file.gif>[:<số bước tối đa>]"
+    # -> vị trí ban đầu chuẩn của gym-pusht theo seed, tự chạy, quay, lưu GIF rồi thoát.
+    demo = os.environ.get("APP_DEMO")
+    demo_out, demo_max = None, 10**9
+    if demo:
+        parts = demo.split(":")
+        demo_out = parts[1]
+        demo_max = int(parts[2]) if len(parts) > 2 else 300
+        o, _ = env.reset(seed=int(parts[0]))
+        u = env.unwrapped
+        agent = [float(v) for v in o["agent_pos"]]
+        tgt, ang = np.array(u.block.position, float), float(u.block.angle)
+        # reset_to_state hiểu (x, y) khối T theo gốc khác body.position -> đo độ lệch ở đúng góc này rồi bù lại
+        env.reset(options={"reset_to_state": [*agent, *tgt, ang]})
+        off = np.array(u.block.position, float) - tgt
+        block = list(tgt - off)
+        angle_deg = float(np.degrees(ang)) % 360
+        ctrl = MODELS[model_i][2](MODELS[model_i][1])
+        place()
+        ctrl.reset(obs)
+        running, steps, max_cov, queue, waiting, fast = True, 0, cov, [], False, True
+        rec, rec_k = [], 0
+        status = "Đang chạy..."
     while True:
         for ev in pygame.event.get():
             if ev.type == pygame.QUIT or (ev.type == pygame.KEYDOWN and ev.key == pygame.K_ESCAPE):
@@ -572,12 +596,25 @@ def main():
                 if rec is not None and rec:                 # đang quay: giữ khung cuối 1.5 s rồi tự lưu
                     for _ in range(30):
                         capture(every=2)
-                    status += f" Đã lưu GIF: {save_gif()}"
+                    status += f" Đã lưu GIF: {save_gif(demo_out)}"
                     rec = None
                     redraw()
+                if demo:
+                    print(f"THẮNG {steps} bước -> {demo_out}")
+                    pygame.quit()
+                    return
                 continue
             redraw()
             capture()
+            if demo and steps >= demo_max:                  # chế độ tự quay: hết số bước -> lưu và thoát
+                status = f"Hết {steps} bước, coverage cao nhất {max_cov*100:.1f}%"
+                redraw()
+                for _ in range(30):
+                    capture(every=2)
+                save_gif(demo_out)
+                print(f"THUA (coverage cao nhất {max_cov:.3f}) -> {demo_out}")
+                pygame.quit()
+                return
             if not fast:
                 clock.tick(10)  # đúng tốc độ mô phỏng: 10 bước/giây
         else:
